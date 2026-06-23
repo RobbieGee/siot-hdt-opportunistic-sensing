@@ -132,6 +132,14 @@ The default full run uses:
 - main graph size: `60` source nodes
 - scalability graph sizes: `60, 200, 800`
 
+To refresh only the manuscript figures from existing CSV outputs, run:
+
+```bash
+python regenerate_figures.py
+```
+
+This command reads `data/` and rewrites the PNG/PDF files in `figures/` without rerunning the simulator or changing CSV results.
+
 Useful quick smoke run:
 
 ```bash

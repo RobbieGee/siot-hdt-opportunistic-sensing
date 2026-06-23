@@ -43,7 +43,7 @@ DISCOVERY_MODE_COMPARISON_POLICIES: Tuple[str, ...] = (
     "siot_aware_trust_privacy_bounded_discovery",
 )
 
-POLICY_LABELS: Dict[str, str] = {
+POLICY_LABELS_LONG: Dict[str, str] = {
     "ego_only": "Ego-only",
     "opportunistic_all": "Opportunistic all",
     "siot_aware": "SIoT-aware",
@@ -56,11 +56,26 @@ POLICY_LABELS: Dict[str, str] = {
     "siot_aware_trust_privacy_bounded_discovery": "Privacy-aware SIoT bounded discovery",
 }
 
+POLICY_LABELS_SHORT: Dict[str, str] = {
+    "ego_only": "EGO",
+    "opportunistic_all": "OPP-ALL",
+    "siot_aware": "SIoT",
+    "siot_aware_trust_privacy": "P-SIoT",
+    "random_k": "R-k",
+    "budgeted_opportunistic_k": "B-OPP",
+    "siot_aware_exhaustive_discovery": "SIoT-EXH",
+    "siot_aware_bounded_discovery": "SIoT-BND",
+    "siot_aware_trust_privacy_exhaustive_discovery": "P-SIoT-EXH",
+    "siot_aware_trust_privacy_bounded_discovery": "P-SIoT-BND",
+}
+
+POLICY_LABELS: Dict[str, str] = POLICY_LABELS_LONG
+
 SCENARIO_LABELS: Dict[str, str] = {
     "nominal": "Nominal",
     "degraded_ego": "Degraded ego",
-    "ambiguous_local_context": "Ambiguous local context",
-    "noisy_untrusted_external": "Noisy untrusted external",
+    "ambiguous_local_context": "Ambiguous local",
+    "noisy_untrusted_external": "Noisy external",
 }
 
 RELATION_TYPES: Tuple[str, ...] = ("OOR", "CLOR", "CWOR", "SOR", "POR")

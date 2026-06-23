@@ -4,7 +4,15 @@ import matplotlib
 import numpy as np
 import pandas as pd
 
-from sim_hdt_siot.config import CONTEXT_VARIABLES, DEFAULT_POLICIES, DEFAULT_SCENARIOS, DISCOVERY_MODE_COMPARISON_POLICIES, POLICY_LABELS
+from sim_hdt_siot.config import (
+    BUDGET_MATCHED_POLICIES,
+    CONTEXT_VARIABLES,
+    DEFAULT_POLICIES,
+    DEFAULT_SCENARIOS,
+    DISCOVERY_MODE_COMPARISON_POLICIES,
+    POLICY_LABELS_SHORT,
+    SCENARIO_LABELS,
+)
 
 
 matplotlib.use("Agg")
@@ -34,22 +42,17 @@ LEGEND_SIZE = 9.5
 VARIABLE_LABELS = {
     "place": "Place",
     "activity": "Activity",
-    "env_load": "Env. Load",
-    "resource_state": "Resource State",
+    "env_load": "Env. load",
+    "resource_state": "Resource state",
 }
-SCENARIO_TITLES = {
-    "nominal": "Nominal",
-    "degraded_ego": "Degraded Ego",
-    "ambiguous_local_context": "Ambiguous Local",
-    "noisy_untrusted_external": "Noisy External",
-}
+SCENARIO_TITLES = SCENARIO_LABELS
 
 def _ordered_metric_frame(frame: pd.DataFrame) -> pd.DataFrame:
     ordered = frame.copy()
     if "scenario" in ordered.columns:
         ordered["scenario"] = pd.Categorical(ordered["scenario"], categories=list(DEFAULT_SCENARIOS), ordered=True)
     if "policy" in ordered.columns:
-        policy_order = list(dict.fromkeys(list(DEFAULT_POLICIES) + list(DISCOVERY_MODE_COMPARISON_POLICIES)))
+        policy_order = list(dict.fromkeys(list(DEFAULT_POLICIES) + list(BUDGET_MATCHED_POLICIES) + list(DISCOVERY_MODE_COMPARISON_POLICIES)))
         ordered["policy"] = pd.Categorical(ordered["policy"], categories=policy_order, ordered=True)
     return ordered.sort_values([column for column in ["scenario", "policy"] if column in ordered.columns])
 
@@ -62,7 +65,17 @@ def _style_axes(ax: plt.Axes) -> None:
 
 
 def _policy_label(policy: str) -> str:
-    return POLICY_LABELS.get(policy, policy)
+    return POLICY_LABELS_SHORT.get(policy, policy)
+
+
+def _scenario_label(scenario: str) -> str:
+    return SCENARIO_TITLES.get(scenario, scenario.replace("_", " ").title())
+
+
+def _legend_for_policies(policies: list[str]) -> tuple[list[plt.Rectangle], list[str]]:
+    handles = [plt.Rectangle((0, 0), 1, 1, color=POLICY_COLORS[policy]) for policy in policies]
+    labels = [_policy_label(policy) for policy in policies]
+    return handles, labels
 
 
 def _bootstrap_confidence_interval(values: np.ndarray, seed: int = 7, samples: int = 2000) -> tuple[float, float]:
@@ -139,17 +152,16 @@ def plot_overall_accuracy(
             yerr=np.vstack([errors_low, errors_high]),
             error_kw={"elinewidth": 0.9, "capsize": 2.5, "capthick": 0.9, "ecolor": "#111827"},
         )
-        ax.set_title(SCENARIO_TITLES.get(scenario, scenario.replace("_", " ").title()), fontsize=SUBPLOT_TITLE_SIZE, pad=4)
-        ax.set_xticks(x_positions, [_policy_label(policy) for policy in policies], rotation=12, ha="right")
+        ax.set_title(_scenario_label(scenario), fontsize=SUBPLOT_TITLE_SIZE, pad=4)
+        ax.set_xticks(x_positions, [_policy_label(policy) for policy in policies], rotation=0)
         ax.set_ylim(0.0, y_upper)
         _style_axes(ax)
     for ax in axes[:, 0]:
         ax.set_ylabel("OCA", fontsize=LABEL_SIZE)
     for ax in axes[1, :]:
         ax.set_xlabel("Policy", fontsize=LABEL_SIZE)
-    handles = [plt.Rectangle((0, 0), 1, 1, color=POLICY_COLORS[policy]) for policy in DEFAULT_POLICIES]
-    labels = [POLICY_LABELS[policy] for policy in DEFAULT_POLICIES]
-    fig.legend(handles, labels, loc="upper center", ncol=2, frameon=False, fontsize=LEGEND_SIZE, bbox_to_anchor=(0.5, 1.01))
+    handles, labels = _legend_for_policies(list(DEFAULT_POLICIES))
+    fig.legend(handles, labels, loc="upper center", ncol=4, frameon=False, fontsize=LEGEND_SIZE, bbox_to_anchor=(0.5, 1.01))
     fig.subplots_adjust(left=0.10, right=0.99, bottom=0.10, top=0.87, wspace=0.20, hspace=0.26)
     fig.savefig(output_path, dpi=dpi, bbox_inches="tight")
     plt.close(fig)
@@ -172,15 +184,15 @@ def plot_macro_f1_by_variable(metrics_df: pd.DataFrame, output_path: Path, dpi: 
                 ]
                 values.append(float(subset[f"macro_f1_{variable}"].iloc[0]) if not subset.empty else 0.0)
             shifted_positions = [x + ((offset_idx - 1.5) * width) for x in x_positions]
-            ax.bar(shifted_positions, values, width=width, color=POLICY_COLORS[policy], label=policy)
+            ax.bar(shifted_positions, values, width=width, color=POLICY_COLORS[policy], label=_policy_label(policy))
         ax.set_title(VARIABLE_LABELS[variable], fontsize=SUBPLOT_TITLE_SIZE)
-        ax.set_xticks(list(x_positions), [scenario.replace("_", "\n") for scenario in scenarios])
+        ax.set_xticks(list(x_positions), [_scenario_label(scenario).replace(" ", "\n") for scenario in scenarios])
         ax.set_ylim(0.0, 1.0)
         ax.set_ylabel("Macro-F1", fontsize=LABEL_SIZE)
         _style_axes(ax)
-    handles = [plt.Rectangle((0, 0), 1, 1, color=POLICY_COLORS[policy]) for policy in DEFAULT_POLICIES]
-    fig.legend(handles, [POLICY_LABELS[policy] for policy in DEFAULT_POLICIES], loc="upper center", ncol=2, frameon=False, bbox_to_anchor=(0.5, 1.02))
-    fig.tight_layout()
+    handles, labels = _legend_for_policies(list(DEFAULT_POLICIES))
+    fig.legend(handles, labels, loc="upper center", ncol=4, frameon=False, fontsize=LEGEND_SIZE, bbox_to_anchor=(0.5, 1.02))
+    fig.subplots_adjust(left=0.08, right=0.99, bottom=0.08, top=0.90, wspace=0.18, hspace=0.28)
     fig.savefig(output_path, dpi=dpi, bbox_inches="tight")
     plt.close(fig)
 
@@ -206,20 +218,20 @@ def plot_accuracy_vs_missing_ego(robustness_df: pd.DataFrame, output_path: Path,
                 markersize=4.2,
                 linewidth=1.9,
                 color=POLICY_COLORS.get(policy, "#111827"),
-                label=POLICY_LABELS.get(policy, policy),
+                label=_policy_label(policy),
             )
         ax.set_xlim(*x_range)
         ax.set_xticks([0.0, 0.25, 0.50, 0.75, 1.0])
         ax.set_ylim(0.0, y_max)
-        ax.set_title(SCENARIO_TITLES.get(scenario, scenario.replace("_", " ").title()), fontsize=SUBPLOT_TITLE_SIZE, pad=4)
+        ax.set_title(_scenario_label(scenario), fontsize=SUBPLOT_TITLE_SIZE, pad=4)
         _style_axes(ax)
     for ax in axes[:, 0]:
         ax.set_ylabel("OCA", fontsize=LABEL_SIZE)
     for ax in axes[1, :]:
         ax.set_xlabel("Ego Missing Rate", fontsize=LABEL_SIZE)
     handles = [Line2D([0], [0], color=POLICY_COLORS[policy], marker="o", linewidth=2.0) for policy in DEFAULT_POLICIES]
-    labels = [POLICY_LABELS[policy] for policy in DEFAULT_POLICIES]
-    fig.legend(handles, labels, loc="upper center", ncol=2, frameon=False, fontsize=LEGEND_SIZE, bbox_to_anchor=(0.5, 1.01))
+    labels = [_policy_label(policy) for policy in DEFAULT_POLICIES]
+    fig.legend(handles, labels, loc="upper center", ncol=4, frameon=False, fontsize=LEGEND_SIZE, bbox_to_anchor=(0.5, 1.01))
     fig.subplots_adjust(left=0.10, right=0.99, bottom=0.10, top=0.87, wspace=0.20, hspace=0.26)
     fig.savefig(output_path, dpi=dpi, bbox_inches="tight")
     plt.close(fig)
@@ -281,11 +293,11 @@ def plot_convergence_time(metrics_df: pd.DataFrame, output_path: Path, dpi: int)
             ]
             values.append(float(subset["convergence_time"].iloc[0]) if not subset.empty else 0.0)
         shifted_positions = [x + ((offset_idx - 1.5) * width) for x in x_positions]
-        ax.bar(shifted_positions, values, width=width, color=POLICY_COLORS[policy], label=policy)
-    ax.set_xticks(x_positions, [scenario.replace("_", "\n") for scenario in scenarios])
+        ax.bar(shifted_positions, values, width=width, color=POLICY_COLORS[policy], label=_policy_label(policy))
+    ax.set_xticks(x_positions, [_scenario_label(scenario).replace(" ", "\n") for scenario in scenarios])
     ax.set_title("Convergence Time by Policy and Scenario", fontsize=TITLE_SIZE)
     ax.set_ylabel("Average Steps After Transition", fontsize=LABEL_SIZE)
-    ax.legend(frameon=False, ncol=2, labels=[POLICY_LABELS.get(policy, policy) for policy in policies])
+    ax.legend(frameon=False, ncol=4, labels=[_policy_label(policy) for policy in policies], fontsize=LEGEND_SIZE)
     _style_axes(ax)
     fig.tight_layout()
     fig.savefig(output_path, dpi=dpi, bbox_inches="tight")
@@ -305,26 +317,31 @@ def plot_effective_recovery_cost(frame: pd.DataFrame, output_path: Path, dpi: in
 
 
 def plot_budget_matched_oca_cost(frame: pd.DataFrame, output_path: Path, dpi: int) -> None:
+    frame = _ordered_metric_frame(frame)
     fig, axes = plt.subplots(2, 2, figsize=(9.4, 7.2), sharex=False, sharey=True)
     scenarios = [scenario for scenario in DEFAULT_SCENARIOS if scenario in set(frame["scenario"].astype(str))]
+    policies = [policy for policy in BUDGET_MATCHED_POLICIES if policy in set(frame["policy"].astype(str))]
     for ax, scenario in zip(axes.flatten(), scenarios):
         subset = frame[frame["scenario"].astype(str) == scenario]
-        for policy, policy_df in subset.groupby("policy", observed=False):
+        for policy in policies:
+            policy_df = subset[subset["policy"].astype(str) == policy]
+            if policy_df.empty:
+                continue
             ax.scatter(
                 policy_df["mean_total_operational_cost"],
                 policy_df["OCA"],
                 s=70,
                 color=POLICY_COLORS.get(str(policy), "#111827"),
-                label=POLICY_LABELS.get(str(policy), str(policy)),
+                label=_policy_label(str(policy)),
                 edgecolor="white",
                 linewidth=0.8,
             )
-        ax.set_title(SCENARIO_TITLES.get(scenario, scenario), fontsize=SUBPLOT_TITLE_SIZE)
-        ax.set_xlabel("Total Operational Cost", fontsize=LABEL_SIZE)
+        ax.set_title(_scenario_label(scenario), fontsize=SUBPLOT_TITLE_SIZE)
+        ax.set_xlabel("Total operational cost", fontsize=LABEL_SIZE)
         ax.set_ylabel("OCA", fontsize=LABEL_SIZE)
         _style_axes(ax)
     handles, labels = axes.flatten()[0].get_legend_handles_labels()
-    fig.legend(handles, labels, loc="upper center", ncol=2, frameon=False, fontsize=LEGEND_SIZE)
+    fig.legend(handles, labels, loc="upper center", ncol=4, frameon=False, fontsize=LEGEND_SIZE)
     fig.subplots_adjust(left=0.10, right=0.99, bottom=0.08, top=0.86, wspace=0.24, hspace=0.30)
     fig.savefig(output_path, dpi=dpi, bbox_inches="tight")
     plt.close(fig)
@@ -359,21 +376,22 @@ def plot_discovery_mode_oca_cost(frame: pd.DataFrame, output_path: Path, dpi: in
                 color=POLICY_COLORS.get(policy, "#111827"),
                 edgecolor="white",
                 linewidth=0.8,
-                label=POLICY_LABELS.get(policy, policy),
+                label=_policy_label(policy),
             )
-        ax.set_title(SCENARIO_TITLES.get(scenario, scenario), fontsize=SUBPLOT_TITLE_SIZE)
-        ax.set_xlabel("Total Operational Cost", fontsize=LABEL_SIZE)
+        ax.set_title(_scenario_label(scenario), fontsize=SUBPLOT_TITLE_SIZE)
+        ax.set_xlabel("Total operational cost", fontsize=LABEL_SIZE)
         ax.set_ylabel("OCA", fontsize=LABEL_SIZE)
         _style_axes(ax)
     handles, labels = axes.flatten()[0].get_legend_handles_labels()
     unique = dict(zip(labels, handles))
-    fig.legend(unique.values(), unique.keys(), loc="upper center", ncol=2, frameon=False, fontsize=LEGEND_SIZE)
+    fig.legend(unique.values(), unique.keys(), loc="upper center", ncol=4, frameon=False, fontsize=LEGEND_SIZE)
     fig.subplots_adjust(left=0.10, right=0.99, bottom=0.08, top=0.84, wspace=0.24, hspace=0.30)
     fig.savefig(output_path, dpi=dpi, bbox_inches="tight")
     plt.close(fig)
 
 
 def plot_pareto(frame: pd.DataFrame, output_path: Path, dpi: int, x_col: str, x_label: str) -> None:
+    frame = _ordered_metric_frame(frame)
     fig, axes = plt.subplots(2, 2, figsize=(9.4, 7.2), sharey=True)
     scenarios = [scenario for scenario in DEFAULT_SCENARIOS if scenario in set(frame["scenario"].astype(str))]
     for ax, scenario in zip(axes.flatten(), scenarios):
@@ -387,15 +405,15 @@ def plot_pareto(frame: pd.DataFrame, output_path: Path, dpi: int, x_col: str, x_
                 marker="D" if row.get("pareto_efficient_oca_cost", False) else "o",
                 edgecolor="white",
                 linewidth=0.8,
-                label=POLICY_LABELS.get(str(row["policy"]), str(row["policy"])),
+                label=_policy_label(str(row["policy"])),
             )
-        ax.set_title(SCENARIO_TITLES.get(scenario, scenario), fontsize=SUBPLOT_TITLE_SIZE)
+        ax.set_title(_scenario_label(scenario), fontsize=SUBPLOT_TITLE_SIZE)
         ax.set_xlabel(x_label, fontsize=LABEL_SIZE)
         ax.set_ylabel("OCA", fontsize=LABEL_SIZE)
         _style_axes(ax)
     handles, labels = axes.flatten()[0].get_legend_handles_labels()
     unique = dict(zip(labels, handles))
-    fig.legend(unique.values(), unique.keys(), loc="upper center", ncol=2, frameon=False, fontsize=LEGEND_SIZE)
+    fig.legend(unique.values(), unique.keys(), loc="upper center", ncol=4, frameon=False, fontsize=LEGEND_SIZE)
     fig.subplots_adjust(left=0.10, right=0.99, bottom=0.08, top=0.86, wspace=0.24, hspace=0.30)
     fig.savefig(output_path, dpi=dpi, bbox_inches="tight")
     plt.close(fig)
@@ -405,7 +423,7 @@ def plot_oca_per_cost(frame: pd.DataFrame, output_path: Path, dpi: int) -> None:
     _plot_grouped_bars(
         frame,
         "OCA_per_total_cost",
-        "OCA per Total Operational Cost",
+        "OCA per total operational cost",
         output_path,
         dpi,
         ylabel="OCA / Cost",
@@ -424,21 +442,26 @@ def plot_scalability(frame: pd.DataFrame, output_path: Path, dpi: int, y_col: st
     summary = frame.groupby(["graph_size", "policy"], as_index=False, observed=False)[y_col].mean()
     policies = [policy for policy in DEFAULT_POLICIES if policy in set(summary["policy"].astype(str))]
     fig, ax = plt.subplots(figsize=(8.2, 4.8))
+    graph_sizes = sorted(int(value) for value in summary["graph_size"].unique())
+    x_lookup = {size: index for index, size in enumerate(graph_sizes)}
     for policy in policies:
         subset = summary[summary["policy"].astype(str) == policy].sort_values("graph_size")
+        x_values = [x_lookup[int(value)] for value in subset["graph_size"]]
         ax.plot(
-            subset["graph_size"],
+            x_values,
             subset[y_col],
             marker="o",
             linewidth=2.0,
             color=POLICY_COLORS.get(policy, "#111827"),
-            label=POLICY_LABELS.get(policy, policy),
+            label=_policy_label(policy),
         )
-    ax.set_xlabel("Source Nodes", fontsize=LABEL_SIZE)
+    ax.set_xlabel("Source nodes", fontsize=LABEL_SIZE)
     ax.set_ylabel(y_label, fontsize=LABEL_SIZE)
-    ax.set_xscale("log")
-    ax.set_xticks(sorted(summary["graph_size"].unique()), [str(int(value)) for value in sorted(summary["graph_size"].unique())])
-    ax.legend(frameon=False, ncol=2)
+    if y_col == "mean_total_operational_cost":
+        ax.set_yscale("symlog", linthresh=1.0)
+    ax.set_xticks(list(x_lookup.values()), [str(value) for value in graph_sizes])
+    ax.margins(x=0.08)
+    ax.legend(frameon=False, ncol=4, fontsize=LEGEND_SIZE)
     _style_axes(ax)
     fig.tight_layout()
     fig.savefig(output_path, dpi=dpi, bbox_inches="tight")
@@ -458,11 +481,11 @@ def _plot_grouped_bars(frame: pd.DataFrame, value_col: str, title: str, output_p
             subset = frame[(frame["scenario"].astype(str) == scenario) & (frame["policy"].astype(str) == policy)]
             values.append(float(subset[value_col].iloc[0]) if not subset.empty else 0.0)
         shifted_positions = [x + ((offset_idx - 1.5) * width) for x in x_positions]
-        ax.bar(shifted_positions, values, width=width, color=POLICY_COLORS.get(policy, "#111827"), label=POLICY_LABELS.get(policy, policy))
-    ax.set_xticks(x_positions, [scenario.replace("_", "\n") for scenario in scenarios])
+        ax.bar(shifted_positions, values, width=width, color=POLICY_COLORS.get(policy, "#111827"), label=_policy_label(policy))
+    ax.set_xticks(x_positions, [_scenario_label(scenario).replace(" ", "\n") for scenario in scenarios])
     ax.set_title(title, fontsize=TITLE_SIZE)
     ax.set_ylabel(ylabel, fontsize=LABEL_SIZE)
-    ax.legend(frameon=False, ncol=2)
+    ax.legend(frameon=False, ncol=4, fontsize=LEGEND_SIZE)
     _style_axes(ax)
     fig.tight_layout()
     fig.savefig(output_path, dpi=dpi, bbox_inches="tight")

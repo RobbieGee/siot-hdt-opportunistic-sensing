@@ -1179,11 +1179,11 @@ def build_figures(
         "convergence_time": lambda path: plot_convergence_time(metrics_df, path, config.plot_dpi),
         "effective_recovery_cost": lambda path: plot_effective_recovery_cost(convergence_cost_df, path, config.plot_dpi),
         "budget_matched": lambda path: plot_budget_matched_oca_cost(budget_matched_results_df, path, config.plot_dpi),
-        "pareto_cost": lambda path: plot_pareto(pareto_df, path, config.plot_dpi, "mean_total_operational_cost", "Total Operational Cost"),
-        "pareto_privacy": lambda path: plot_pareto(pareto_df, path, config.plot_dpi, "mean_privacy_cost", "Privacy Cost"),
+        "pareto_cost": lambda path: plot_pareto(pareto_df, path, config.plot_dpi, "mean_total_operational_cost", "Total operational cost"),
+        "pareto_privacy": lambda path: plot_pareto(pareto_df, path, config.plot_dpi, "mean_privacy_cost", "Privacy cost"),
         "oca_per_cost": lambda path: plot_oca_per_cost(cost_effectiveness_df, path, config.plot_dpi),
         "scalability_cost": lambda path: plot_scalability(
-            scalability_results_df, path, config.plot_dpi, "mean_total_operational_cost", "Total Operational Cost"
+            scalability_results_df, path, config.plot_dpi, "mean_total_operational_cost", "Total operational cost"
         ),
         "scalability_oca": lambda path: plot_scalability(scalability_results_df, path, config.plot_dpi, "OCA", "OCA"),
         "scalability_oca_per_cost": lambda path: plot_scalability(

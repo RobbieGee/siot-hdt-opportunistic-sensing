@@ -1,0 +1,376 @@
+summary_type,scenario,policy,policy_label,failure_category,wrong_variable_count,wrong_variable_combination,true_context_tuple,estimated_context_tuple,count,rate
+misclassified_context_tuple,nominal,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|focused_work|low|nominal,47,0.003916666666666666
+misclassified_context_tuple,nominal,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|focused_work|medium|degraded,39,0.00325
+misclassified_context_tuple,nominal,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,transit|commuting|medium|nominal,transit|commuting|low|nominal,36,0.003
+misclassified_context_tuple,nominal,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,office|focused_work|low|nominal,office|focused_work|low|degraded,35,0.002916666666666667
+misclassified_context_tuple,nominal,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,office|focused_work|low|nominal,home|focused_work|low|nominal,31,0.0025833333333333333
+misclassified_context_tuple,nominal,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|focused_work|high|nominal,31,0.0025833333333333333
+misclassified_context_tuple,nominal,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,home|resting|medium|nominal,home|focused_work|medium|nominal,30,0.0025
+misclassified_context_tuple,nominal,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,home|resting|medium|nominal,home|resting|low|nominal,29,0.002416666666666667
+misclassified_context_tuple,nominal,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,home|resting|medium|nominal,home|resting|medium|degraded,29,0.002416666666666667
+misclassified_context_tuple,nominal,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,home|resting|low|nominal,home|resting|low|sparse,28,0.0023333333333333335
+misclassified_context_tuple,nominal,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,office|focused_work|low|nominal,office|focused_work|low|sparse,28,0.0023333333333333335
+misclassified_context_tuple,nominal,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,home|focused_work|medium|nominal,28,0.0023333333333333335
+wrong_variable_combination,nominal,ego_only,Ego-only,all_variables_correct,0,none,not_applicable,not_applicable,1674,0.1395
+wrong_variable_combination,nominal,ego_only,Ego-only,only_one_variable_wrong,1,activity,not_applicable,not_applicable,1021,0.08508333333333333
+wrong_variable_combination,nominal,ego_only,Ego-only,only_one_variable_wrong,1,place,not_applicable,not_applicable,933,0.07775
+wrong_variable_combination,nominal,ego_only,Ego-only,only_one_variable_wrong,1,env_load,not_applicable,not_applicable,867,0.07225
+wrong_variable_combination,nominal,ego_only,Ego-only,only_one_variable_wrong,1,resource_state,not_applicable,not_applicable,864,0.072
+wrong_variable_combination,nominal,ego_only,Ego-only,two_variables_wrong,2,activity+resource_state,not_applicable,not_applicable,692,0.057666666666666665
+wrong_variable_combination,nominal,ego_only,Ego-only,two_variables_wrong,2,place+activity,not_applicable,not_applicable,682,0.05683333333333333
+wrong_variable_combination,nominal,ego_only,Ego-only,all_variables_wrong,4,place+activity+env_load+resource_state,not_applicable,not_applicable,667,0.05558333333333333
+wrong_variable_combination,nominal,ego_only,Ego-only,two_variables_wrong,2,activity+env_load,not_applicable,not_applicable,648,0.054
+wrong_variable_combination,nominal,ego_only,Ego-only,two_variables_wrong,2,place+resource_state,not_applicable,not_applicable,616,0.051333333333333335
+wrong_variable_combination,nominal,ego_only,Ego-only,two_variables_wrong,2,env_load+resource_state,not_applicable,not_applicable,589,0.04908333333333333
+wrong_variable_combination,nominal,ego_only,Ego-only,three_variables_wrong,3,place+activity+resource_state,not_applicable,not_applicable,578,0.04816666666666667
+misclassified_context_tuple,nominal,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|resting|medium|nominal,28,0.0023333333333333335
+misclassified_context_tuple,nominal,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|focused_work|medium|sparse,27,0.00225
+misclassified_context_tuple,nominal,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|focused_work|medium|degraded,26,0.0021666666666666666
+misclassified_context_tuple,nominal,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,office|focused_work|low|nominal,office|focused_work|low|sparse,23,0.0019166666666666666
+misclassified_context_tuple,nominal,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|interacting|medium|nominal,23,0.0019166666666666666
+misclassified_context_tuple,nominal,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,home|resting|medium|nominal,home|interacting|medium|nominal,22,0.0018333333333333333
+misclassified_context_tuple,nominal,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,office|focused_work|low|nominal,office|focused_work|low|degraded,19,0.0015833333333333333
+misclassified_context_tuple,nominal,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,transit|commuting|medium|nominal,transit|commuting|medium|sparse,19,0.0015833333333333333
+misclassified_context_tuple,nominal,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|commuting|medium|nominal,18,0.0015
+misclassified_context_tuple,nominal,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,office|focused_work|low|nominal,office|interacting|low|nominal,16,0.0013333333333333333
+misclassified_context_tuple,nominal,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,transit|commuting|medium|nominal,transit|commuting|medium|degraded,16,0.0013333333333333333
+misclassified_context_tuple,nominal,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,home|resting|medium|nominal,home|resting|medium|sparse,15,0.00125
+wrong_variable_combination,nominal,opportunistic_all,Opportunistic all,all_variables_correct,0,none,not_applicable,not_applicable,9654,0.8045
+wrong_variable_combination,nominal,opportunistic_all,Opportunistic all,only_one_variable_wrong,1,activity,not_applicable,not_applicable,1317,0.10975
+wrong_variable_combination,nominal,opportunistic_all,Opportunistic all,only_one_variable_wrong,1,resource_state,not_applicable,not_applicable,885,0.07375
+wrong_variable_combination,nominal,opportunistic_all,Opportunistic all,two_variables_wrong,2,activity+resource_state,not_applicable,not_applicable,129,0.01075
+wrong_variable_combination,nominal,opportunistic_all,Opportunistic all,only_one_variable_wrong,1,env_load,not_applicable,not_applicable,10,0.0008333333333333334
+wrong_variable_combination,nominal,opportunistic_all,Opportunistic all,two_variables_wrong,2,activity+env_load,not_applicable,not_applicable,2,0.00016666666666666666
+wrong_variable_combination,nominal,opportunistic_all,Opportunistic all,only_one_variable_wrong,1,place,not_applicable,not_applicable,2,0.00016666666666666666
+wrong_variable_combination,nominal,opportunistic_all,Opportunistic all,two_variables_wrong,2,place+resource_state,not_applicable,not_applicable,1,8.333333333333333e-05
+misclassified_context_tuple,nominal,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|focused_work|low|nominal,50,0.004166666666666667
+misclassified_context_tuple,nominal,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|focused_work|medium|degraded,44,0.0036666666666666666
+misclassified_context_tuple,nominal,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,transit|commuting|medium|nominal,transit|commuting|low|nominal,42,0.0035
+misclassified_context_tuple,nominal,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|focused_work|high|nominal,38,0.0031666666666666666
+misclassified_context_tuple,nominal,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,office|focused_work|low|nominal,office|focused_work|low|degraded,36,0.003
+misclassified_context_tuple,nominal,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,office|focused_work|low|nominal,office|focused_work|low|sparse,34,0.0028333333333333335
+misclassified_context_tuple,nominal,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,home|resting|medium|nominal,home|resting|low|nominal,33,0.00275
+misclassified_context_tuple,nominal,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,home|resting|medium|nominal,home|resting|medium|degraded,32,0.0026666666666666666
+misclassified_context_tuple,nominal,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,home|resting|low|nominal,home|resting|low|sparse,27,0.00225
+misclassified_context_tuple,nominal,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,office|focused_work|low|nominal,office|focused_work|high|nominal,27,0.00225
+misclassified_context_tuple,nominal,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|focused_work|medium|sparse,26,0.0021666666666666666
+misclassified_context_tuple,nominal,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,meeting_room|interacting|medium|nominal,meeting_room|interacting|high|nominal,25,0.0020833333333333333
+wrong_variable_combination,nominal,siot_aware,SIoT-aware,all_variables_correct,0,none,not_applicable,not_applicable,2631,0.21925
+wrong_variable_combination,nominal,siot_aware,SIoT-aware,only_one_variable_wrong,1,env_load,not_applicable,not_applicable,1323,0.11025
+wrong_variable_combination,nominal,siot_aware,SIoT-aware,only_one_variable_wrong,1,resource_state,not_applicable,not_applicable,1176,0.098
+wrong_variable_combination,nominal,siot_aware,SIoT-aware,only_one_variable_wrong,1,activity,not_applicable,not_applicable,1140,0.095
+wrong_variable_combination,nominal,siot_aware,SIoT-aware,only_one_variable_wrong,1,place,not_applicable,not_applicable,1018,0.08483333333333333
+wrong_variable_combination,nominal,siot_aware,SIoT-aware,two_variables_wrong,2,env_load+resource_state,not_applicable,not_applicable,669,0.05575
+wrong_variable_combination,nominal,siot_aware,SIoT-aware,two_variables_wrong,2,activity+env_load,not_applicable,not_applicable,635,0.05291666666666667
+wrong_variable_combination,nominal,siot_aware,SIoT-aware,two_variables_wrong,2,activity+resource_state,not_applicable,not_applicable,573,0.04775
+wrong_variable_combination,nominal,siot_aware,SIoT-aware,two_variables_wrong,2,place+env_load,not_applicable,not_applicable,570,0.0475
+wrong_variable_combination,nominal,siot_aware,SIoT-aware,two_variables_wrong,2,place+resource_state,not_applicable,not_applicable,509,0.042416666666666665
+wrong_variable_combination,nominal,siot_aware,SIoT-aware,two_variables_wrong,2,place+activity,not_applicable,not_applicable,461,0.03841666666666667
+wrong_variable_combination,nominal,siot_aware,SIoT-aware,three_variables_wrong,3,activity+env_load+resource_state,not_applicable,not_applicable,308,0.025666666666666667
+misclassified_context_tuple,nominal,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|focused_work|low|nominal,47,0.003916666666666666
+misclassified_context_tuple,nominal,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|focused_work|medium|degraded,42,0.0035
+misclassified_context_tuple,nominal,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,transit|commuting|medium|nominal,transit|commuting|low|nominal,41,0.003416666666666667
+misclassified_context_tuple,nominal,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,home|resting|medium|nominal,home|resting|medium|degraded,35,0.002916666666666667
+misclassified_context_tuple,nominal,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,office|focused_work|low|nominal,office|focused_work|low|degraded,35,0.002916666666666667
+misclassified_context_tuple,nominal,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|focused_work|high|nominal,35,0.002916666666666667
+misclassified_context_tuple,nominal,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,home|resting|medium|nominal,home|resting|low|nominal,31,0.0025833333333333333
+misclassified_context_tuple,nominal,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,home|resting|low|nominal,home|resting|low|sparse,30,0.0025
+misclassified_context_tuple,nominal,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,office|focused_work|low|nominal,office|focused_work|low|sparse,30,0.0025
+misclassified_context_tuple,nominal,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,office|focused_work|low|nominal,office|focused_work|high|nominal,27,0.00225
+misclassified_context_tuple,nominal,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|focused_work|medium|sparse,26,0.0021666666666666666
+misclassified_context_tuple,nominal,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,meeting_room|interacting|medium|nominal,meeting_room|interacting|high|nominal,25,0.0020833333333333333
+wrong_variable_combination,nominal,siot_aware_trust_privacy,Privacy-aware SIoT,all_variables_correct,0,none,not_applicable,not_applicable,2435,0.20291666666666666
+wrong_variable_combination,nominal,siot_aware_trust_privacy,Privacy-aware SIoT,only_one_variable_wrong,1,env_load,not_applicable,not_applicable,1245,0.10375
+wrong_variable_combination,nominal,siot_aware_trust_privacy,Privacy-aware SIoT,only_one_variable_wrong,1,resource_state,not_applicable,not_applicable,1171,0.09758333333333333
+wrong_variable_combination,nominal,siot_aware_trust_privacy,Privacy-aware SIoT,only_one_variable_wrong,1,activity,not_applicable,not_applicable,1140,0.095
+wrong_variable_combination,nominal,siot_aware_trust_privacy,Privacy-aware SIoT,only_one_variable_wrong,1,place,not_applicable,not_applicable,1005,0.08375
+wrong_variable_combination,nominal,siot_aware_trust_privacy,Privacy-aware SIoT,two_variables_wrong,2,env_load+resource_state,not_applicable,not_applicable,683,0.056916666666666664
+wrong_variable_combination,nominal,siot_aware_trust_privacy,Privacy-aware SIoT,two_variables_wrong,2,activity+env_load,not_applicable,not_applicable,645,0.05375
+wrong_variable_combination,nominal,siot_aware_trust_privacy,Privacy-aware SIoT,two_variables_wrong,2,activity+resource_state,not_applicable,not_applicable,643,0.05358333333333333
+wrong_variable_combination,nominal,siot_aware_trust_privacy,Privacy-aware SIoT,two_variables_wrong,2,place+env_load,not_applicable,not_applicable,566,0.04716666666666667
+wrong_variable_combination,nominal,siot_aware_trust_privacy,Privacy-aware SIoT,two_variables_wrong,2,place+resource_state,not_applicable,not_applicable,538,0.044833333333333336
+wrong_variable_combination,nominal,siot_aware_trust_privacy,Privacy-aware SIoT,two_variables_wrong,2,place+activity,not_applicable,not_applicable,502,0.041833333333333333
+wrong_variable_combination,nominal,siot_aware_trust_privacy,Privacy-aware SIoT,three_variables_wrong,3,place+activity+env_load,not_applicable,not_applicable,330,0.0275
+misclassified_context_tuple,degraded_ego,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,transit|commuting|high|sparse,home|focused_work|low|nominal,77,0.006416666666666667
+misclassified_context_tuple,degraded_ego,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,transit|commuting|high|degraded,home|focused_work|low|nominal,75,0.00625
+misclassified_context_tuple,degraded_ego,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|sparse,home|focused_work|low|nominal,68,0.005666666666666667
+misclassified_context_tuple,degraded_ego,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,office|focused_work|low|nominal,home|focused_work|low|nominal,64,0.005333333333333333
+misclassified_context_tuple,degraded_ego,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,home|focused_work|low|nominal,49,0.004083333333333333
+misclassified_context_tuple,degraded_ego,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,home|resting|medium|degraded,home|focused_work|low|nominal,48,0.004
+misclassified_context_tuple,degraded_ego,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,home|resting|medium|nominal,home|focused_work|low|nominal,47,0.003916666666666666
+misclassified_context_tuple,degraded_ego,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,home|resting|low|nominal,home|focused_work|low|nominal,44,0.0036666666666666666
+misclassified_context_tuple,degraded_ego,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|degraded,home|focused_work|low|nominal,44,0.0036666666666666666
+misclassified_context_tuple,degraded_ego,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,transit|commuting|medium|sparse,home|focused_work|low|nominal,43,0.0035833333333333333
+misclassified_context_tuple,degraded_ego,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,home|resting|low|degraded,home|focused_work|low|nominal,42,0.0035
+misclassified_context_tuple,degraded_ego,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,office|focused_work|low|degraded,home|focused_work|low|nominal,42,0.0035
+wrong_variable_combination,degraded_ego,ego_only,Ego-only,all_variables_wrong,4,place+activity+env_load+resource_state,not_applicable,not_applicable,2532,0.211
+wrong_variable_combination,degraded_ego,ego_only,Ego-only,three_variables_wrong,3,place+activity+env_load,not_applicable,not_applicable,1252,0.10433333333333333
+wrong_variable_combination,degraded_ego,ego_only,Ego-only,three_variables_wrong,3,place+activity+resource_state,not_applicable,not_applicable,1049,0.08741666666666667
+wrong_variable_combination,degraded_ego,ego_only,Ego-only,three_variables_wrong,3,place+env_load+resource_state,not_applicable,not_applicable,1009,0.08408333333333333
+wrong_variable_combination,degraded_ego,ego_only,Ego-only,three_variables_wrong,3,activity+env_load+resource_state,not_applicable,not_applicable,1006,0.08383333333333333
+wrong_variable_combination,degraded_ego,ego_only,Ego-only,two_variables_wrong,2,place+activity,not_applicable,not_applicable,730,0.060833333333333336
+wrong_variable_combination,degraded_ego,ego_only,Ego-only,two_variables_wrong,2,activity+env_load,not_applicable,not_applicable,637,0.05308333333333334
+wrong_variable_combination,degraded_ego,ego_only,Ego-only,two_variables_wrong,2,place+env_load,not_applicable,not_applicable,618,0.0515
+wrong_variable_combination,degraded_ego,ego_only,Ego-only,two_variables_wrong,2,activity+resource_state,not_applicable,not_applicable,554,0.04616666666666667
+wrong_variable_combination,degraded_ego,ego_only,Ego-only,two_variables_wrong,2,place+resource_state,not_applicable,not_applicable,541,0.045083333333333336
+wrong_variable_combination,degraded_ego,ego_only,Ego-only,only_one_variable_wrong,1,activity,not_applicable,not_applicable,452,0.03766666666666667
+wrong_variable_combination,degraded_ego,ego_only,Ego-only,only_one_variable_wrong,1,place,not_applicable,not_applicable,441,0.03675
+misclassified_context_tuple,degraded_ego,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,home|resting|medium|nominal,home|focused_work|medium|nominal,21,0.00175
+misclassified_context_tuple,degraded_ego,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|focused_work|medium|sparse,21,0.00175
+misclassified_context_tuple,degraded_ego,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|waiting|medium|nominal,21,0.00175
+misclassified_context_tuple,degraded_ego,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,transit|commuting|high|degraded,transit|interacting|high|degraded,20,0.0016666666666666668
+misclassified_context_tuple,degraded_ego,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,home|resting|medium|nominal,home|commuting|medium|nominal,18,0.0015
+misclassified_context_tuple,degraded_ego,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,transit|commuting|high|degraded,transit|commuting|high|nominal,18,0.0015
+misclassified_context_tuple,degraded_ego,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,home|resting|medium|nominal,home|resting|medium|sparse,17,0.0014166666666666668
+misclassified_context_tuple,degraded_ego,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,office|focused_work|low|nominal,office|focused_work|low|sparse,17,0.0014166666666666668
+misclassified_context_tuple,degraded_ego,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,office|focused_work|low|nominal,office|commuting|low|nominal,16,0.0013333333333333333
+misclassified_context_tuple,degraded_ego,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|interacting|medium|nominal,15,0.00125
+misclassified_context_tuple,degraded_ego,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,home|resting|low|nominal,home|commuting|low|nominal,14,0.0011666666666666668
+misclassified_context_tuple,degraded_ego,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,home|resting|low|nominal,home|waiting|low|nominal,14,0.0011666666666666668
+wrong_variable_combination,degraded_ego,opportunistic_all,Opportunistic all,all_variables_correct,0,none,not_applicable,not_applicable,9287,0.7739166666666667
+wrong_variable_combination,degraded_ego,opportunistic_all,Opportunistic all,only_one_variable_wrong,1,activity,not_applicable,not_applicable,1546,0.12883333333333333
+wrong_variable_combination,degraded_ego,opportunistic_all,Opportunistic all,only_one_variable_wrong,1,resource_state,not_applicable,not_applicable,963,0.08025
+wrong_variable_combination,degraded_ego,opportunistic_all,Opportunistic all,two_variables_wrong,2,activity+resource_state,not_applicable,not_applicable,168,0.014
+wrong_variable_combination,degraded_ego,opportunistic_all,Opportunistic all,only_one_variable_wrong,1,env_load,not_applicable,not_applicable,23,0.0019166666666666666
+wrong_variable_combination,degraded_ego,opportunistic_all,Opportunistic all,only_one_variable_wrong,1,place,not_applicable,not_applicable,8,0.0006666666666666666
+wrong_variable_combination,degraded_ego,opportunistic_all,Opportunistic all,two_variables_wrong,2,activity+env_load,not_applicable,not_applicable,2,0.00016666666666666666
+wrong_variable_combination,degraded_ego,opportunistic_all,Opportunistic all,two_variables_wrong,2,env_load+resource_state,not_applicable,not_applicable,2,0.00016666666666666666
+wrong_variable_combination,degraded_ego,opportunistic_all,Opportunistic all,two_variables_wrong,2,place+activity,not_applicable,not_applicable,1,8.333333333333333e-05
+misclassified_context_tuple,degraded_ego,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,home|resting|medium|nominal,home|resting|low|nominal,31,0.0025833333333333333
+misclassified_context_tuple,degraded_ego,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|focused_work|low|nominal,28,0.0023333333333333335
+misclassified_context_tuple,degraded_ego,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,office|focused_work|low|nominal,office|focused_work|low|sparse,27,0.00225
+misclassified_context_tuple,degraded_ego,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|focused_work|medium|sparse,25,0.0020833333333333333
+misclassified_context_tuple,degraded_ego,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,home|resting|medium|nominal,home|resting|medium|degraded,23,0.0019166666666666666
+misclassified_context_tuple,degraded_ego,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,office|focused_work|low|nominal,office|focused_work|low|degraded,23,0.0019166666666666666
+misclassified_context_tuple,degraded_ego,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,office|focused_work|low|nominal,office|focused_work|medium|nominal,22,0.0018333333333333333
+misclassified_context_tuple,degraded_ego,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,home|resting|medium|nominal,home|resting|medium|sparse,21,0.00175
+misclassified_context_tuple,degraded_ego,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,office|focused_work|low|nominal,office|focused_work|high|nominal,21,0.00175
+misclassified_context_tuple,degraded_ego,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|focused_work|medium|degraded,21,0.00175
+misclassified_context_tuple,degraded_ego,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|degraded,office|focused_work|low|degraded,20,0.0016666666666666668
+misclassified_context_tuple,degraded_ego,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|focused_work|high|nominal,19,0.0015833333333333333
+wrong_variable_combination,degraded_ego,siot_aware,SIoT-aware,all_variables_correct,0,none,not_applicable,not_applicable,1842,0.1535
+wrong_variable_combination,degraded_ego,siot_aware,SIoT-aware,only_one_variable_wrong,1,activity,not_applicable,not_applicable,1176,0.098
+wrong_variable_combination,degraded_ego,siot_aware,SIoT-aware,only_one_variable_wrong,1,env_load,not_applicable,not_applicable,1152,0.096
+wrong_variable_combination,degraded_ego,siot_aware,SIoT-aware,only_one_variable_wrong,1,resource_state,not_applicable,not_applicable,1119,0.09325
+wrong_variable_combination,degraded_ego,siot_aware,SIoT-aware,only_one_variable_wrong,1,place,not_applicable,not_applicable,919,0.07658333333333334
+wrong_variable_combination,degraded_ego,siot_aware,SIoT-aware,two_variables_wrong,2,activity+env_load,not_applicable,not_applicable,749,0.06241666666666667
+wrong_variable_combination,degraded_ego,siot_aware,SIoT-aware,two_variables_wrong,2,env_load+resource_state,not_applicable,not_applicable,677,0.056416666666666664
+wrong_variable_combination,degraded_ego,siot_aware,SIoT-aware,two_variables_wrong,2,activity+resource_state,not_applicable,not_applicable,657,0.05475
+wrong_variable_combination,degraded_ego,siot_aware,SIoT-aware,two_variables_wrong,2,place+env_load,not_applicable,not_applicable,615,0.05125
+wrong_variable_combination,degraded_ego,siot_aware,SIoT-aware,two_variables_wrong,2,place+activity,not_applicable,not_applicable,592,0.04933333333333333
+wrong_variable_combination,degraded_ego,siot_aware,SIoT-aware,two_variables_wrong,2,place+resource_state,not_applicable,not_applicable,539,0.04491666666666667
+wrong_variable_combination,degraded_ego,siot_aware,SIoT-aware,three_variables_wrong,3,activity+env_load+resource_state,not_applicable,not_applicable,483,0.04025
+misclassified_context_tuple,degraded_ego,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|focused_work|medium|sparse,28,0.0023333333333333335
+misclassified_context_tuple,degraded_ego,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,home|resting|medium|nominal,home|resting|low|nominal,26,0.0021666666666666666
+misclassified_context_tuple,degraded_ego,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|focused_work|low|nominal,22,0.0018333333333333333
+misclassified_context_tuple,degraded_ego,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,home|resting|medium|nominal,home|resting|medium|sparse,21,0.00175
+misclassified_context_tuple,degraded_ego,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,home|resting|medium|nominal,home|resting|medium|degraded,20,0.0016666666666666668
+misclassified_context_tuple,degraded_ego,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,office|focused_work|low|nominal,office|focused_work|low|degraded,20,0.0016666666666666668
+misclassified_context_tuple,degraded_ego,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,office|focused_work|low|nominal,office|focused_work|low|sparse,20,0.0016666666666666668
+misclassified_context_tuple,degraded_ego,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,office|focused_work|low|nominal,office|focused_work|medium|nominal,20,0.0016666666666666668
+misclassified_context_tuple,degraded_ego,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,office|focused_work|low|nominal,office|focused_work|high|nominal,19,0.0015833333333333333
+misclassified_context_tuple,degraded_ego,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|degraded,office|focused_work|low|degraded,18,0.0015
+misclassified_context_tuple,degraded_ego,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|focused_work|medium|degraded,18,0.0015
+misclassified_context_tuple,degraded_ego,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|sparse,office|focused_work|medium|nominal,17,0.0014166666666666668
+wrong_variable_combination,degraded_ego,siot_aware_trust_privacy,Privacy-aware SIoT,all_variables_correct,0,none,not_applicable,not_applicable,1638,0.1365
+wrong_variable_combination,degraded_ego,siot_aware_trust_privacy,Privacy-aware SIoT,only_one_variable_wrong,1,activity,not_applicable,not_applicable,1116,0.093
+wrong_variable_combination,degraded_ego,siot_aware_trust_privacy,Privacy-aware SIoT,only_one_variable_wrong,1,resource_state,not_applicable,not_applicable,1087,0.09058333333333334
+wrong_variable_combination,degraded_ego,siot_aware_trust_privacy,Privacy-aware SIoT,only_one_variable_wrong,1,env_load,not_applicable,not_applicable,1077,0.08975
+wrong_variable_combination,degraded_ego,siot_aware_trust_privacy,Privacy-aware SIoT,only_one_variable_wrong,1,place,not_applicable,not_applicable,927,0.07725
+wrong_variable_combination,degraded_ego,siot_aware_trust_privacy,Privacy-aware SIoT,two_variables_wrong,2,activity+env_load,not_applicable,not_applicable,745,0.06208333333333333
+wrong_variable_combination,degraded_ego,siot_aware_trust_privacy,Privacy-aware SIoT,two_variables_wrong,2,activity+resource_state,not_applicable,not_applicable,714,0.0595
+wrong_variable_combination,degraded_ego,siot_aware_trust_privacy,Privacy-aware SIoT,two_variables_wrong,2,env_load+resource_state,not_applicable,not_applicable,676,0.05633333333333333
+wrong_variable_combination,degraded_ego,siot_aware_trust_privacy,Privacy-aware SIoT,two_variables_wrong,2,place+activity,not_applicable,not_applicable,643,0.05358333333333333
+wrong_variable_combination,degraded_ego,siot_aware_trust_privacy,Privacy-aware SIoT,two_variables_wrong,2,place+env_load,not_applicable,not_applicable,634,0.052833333333333336
+wrong_variable_combination,degraded_ego,siot_aware_trust_privacy,Privacy-aware SIoT,two_variables_wrong,2,place+resource_state,not_applicable,not_applicable,580,0.04833333333333333
+wrong_variable_combination,degraded_ego,siot_aware_trust_privacy,Privacy-aware SIoT,three_variables_wrong,3,activity+env_load+resource_state,not_applicable,not_applicable,500,0.041666666666666664
+misclassified_context_tuple,ambiguous_local_context,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,meeting_room|focused_work|medium|nominal,53,0.004416666666666667
+misclassified_context_tuple,ambiguous_local_context,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,office|interacting|medium|nominal,meeting_room|focused_work|medium|nominal,45,0.00375
+misclassified_context_tuple,ambiguous_local_context,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,office|focused_work|low|nominal,meeting_room|focused_work|low|nominal,37,0.0030833333333333333
+misclassified_context_tuple,ambiguous_local_context,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,office|interacting|medium|nominal,home|focused_work|medium|nominal,37,0.0030833333333333333
+misclassified_context_tuple,ambiguous_local_context,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,office|interacting|medium|nominal,meeting_room|interacting|medium|nominal,36,0.003
+misclassified_context_tuple,ambiguous_local_context,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,office|interacting|medium|nominal,office|focused_work|medium|nominal,36,0.003
+misclassified_context_tuple,ambiguous_local_context,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,office|focused_work|low|nominal,office|interacting|low|nominal,34,0.0028333333333333335
+misclassified_context_tuple,ambiguous_local_context,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,transit|commuting|high|sparse,home|focused_work|low|nominal,34,0.0028333333333333335
+misclassified_context_tuple,ambiguous_local_context,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,meeting_room|focused_work|low|nominal,32,0.0026666666666666666
+misclassified_context_tuple,ambiguous_local_context,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,office|interacting|low|nominal,office|focused_work|low|nominal,32,0.0026666666666666666
+misclassified_context_tuple,ambiguous_local_context,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,home|resting|low|nominal,home|focused_work|low|nominal,31,0.0025833333333333333
+misclassified_context_tuple,ambiguous_local_context,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,meeting_room|interacting|medium|nominal,meeting_room|focused_work|medium|nominal,29,0.002416666666666667
+wrong_variable_combination,ambiguous_local_context,ego_only,Ego-only,two_variables_wrong,2,place+activity,not_applicable,not_applicable,1623,0.13525
+wrong_variable_combination,ambiguous_local_context,ego_only,Ego-only,three_variables_wrong,3,place+activity+env_load,not_applicable,not_applicable,1220,0.10166666666666667
+wrong_variable_combination,ambiguous_local_context,ego_only,Ego-only,all_variables_wrong,4,place+activity+env_load+resource_state,not_applicable,not_applicable,1187,0.09891666666666667
+wrong_variable_combination,ambiguous_local_context,ego_only,Ego-only,only_one_variable_wrong,1,place,not_applicable,not_applicable,1076,0.08966666666666667
+wrong_variable_combination,ambiguous_local_context,ego_only,Ego-only,three_variables_wrong,3,place+activity+resource_state,not_applicable,not_applicable,1001,0.08341666666666667
+wrong_variable_combination,ambiguous_local_context,ego_only,Ego-only,only_one_variable_wrong,1,activity,not_applicable,not_applicable,993,0.08275
+wrong_variable_combination,ambiguous_local_context,ego_only,Ego-only,two_variables_wrong,2,place+env_load,not_applicable,not_applicable,737,0.06141666666666667
+wrong_variable_combination,ambiguous_local_context,ego_only,Ego-only,all_variables_correct,0,none,not_applicable,not_applicable,628,0.052333333333333336
+wrong_variable_combination,ambiguous_local_context,ego_only,Ego-only,two_variables_wrong,2,activity+env_load,not_applicable,not_applicable,609,0.05075
+wrong_variable_combination,ambiguous_local_context,ego_only,Ego-only,two_variables_wrong,2,place+resource_state,not_applicable,not_applicable,572,0.04766666666666667
+wrong_variable_combination,ambiguous_local_context,ego_only,Ego-only,three_variables_wrong,3,place+env_load+resource_state,not_applicable,not_applicable,560,0.04666666666666667
+wrong_variable_combination,ambiguous_local_context,ego_only,Ego-only,two_variables_wrong,2,activity+resource_state,not_applicable,not_applicable,466,0.03883333333333333
+misclassified_context_tuple,ambiguous_local_context,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,office|interacting|medium|nominal,office|focused_work|medium|nominal,76,0.006333333333333333
+misclassified_context_tuple,ambiguous_local_context,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|interacting|medium|nominal,67,0.005583333333333333
+misclassified_context_tuple,ambiguous_local_context,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,office|interacting|high|nominal,office|focused_work|high|nominal,51,0.00425
+misclassified_context_tuple,ambiguous_local_context,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,office|focused_work|low|nominal,office|interacting|low|nominal,47,0.003916666666666666
+misclassified_context_tuple,ambiguous_local_context,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,office|focused_work|high|nominal,office|interacting|high|nominal,39,0.00325
+misclassified_context_tuple,ambiguous_local_context,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,office|interacting|low|nominal,office|focused_work|low|nominal,37,0.0030833333333333333
+misclassified_context_tuple,ambiguous_local_context,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,meeting_room|interacting|high|nominal,meeting_room|focused_work|high|nominal,35,0.002916666666666667
+misclassified_context_tuple,ambiguous_local_context,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,office|interacting|high|degraded,office|focused_work|high|degraded,33,0.00275
+misclassified_context_tuple,ambiguous_local_context,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,meeting_room|interacting|medium|nominal,meeting_room|focused_work|medium|nominal,28,0.0023333333333333335
+misclassified_context_tuple,ambiguous_local_context,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,home|resting|medium|nominal,home|waiting|medium|nominal,25,0.0020833333333333333
+misclassified_context_tuple,ambiguous_local_context,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,meeting_room|focused_work|medium|nominal,meeting_room|interacting|medium|nominal,23,0.0019166666666666666
+misclassified_context_tuple,ambiguous_local_context,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,transit|commuting|high|nominal,transit|focused_work|high|nominal,23,0.0019166666666666666
+wrong_variable_combination,ambiguous_local_context,opportunistic_all,Opportunistic all,all_variables_correct,0,none,not_applicable,not_applicable,8916,0.743
+wrong_variable_combination,ambiguous_local_context,opportunistic_all,Opportunistic all,only_one_variable_wrong,1,activity,not_applicable,not_applicable,2078,0.17316666666666666
+wrong_variable_combination,ambiguous_local_context,opportunistic_all,Opportunistic all,only_one_variable_wrong,1,resource_state,not_applicable,not_applicable,779,0.06491666666666666
+wrong_variable_combination,ambiguous_local_context,opportunistic_all,Opportunistic all,two_variables_wrong,2,activity+resource_state,not_applicable,not_applicable,200,0.016666666666666666
+wrong_variable_combination,ambiguous_local_context,opportunistic_all,Opportunistic all,only_one_variable_wrong,1,env_load,not_applicable,not_applicable,10,0.0008333333333333334
+wrong_variable_combination,ambiguous_local_context,opportunistic_all,Opportunistic all,only_one_variable_wrong,1,place,not_applicable,not_applicable,9,0.00075
+wrong_variable_combination,ambiguous_local_context,opportunistic_all,Opportunistic all,two_variables_wrong,2,activity+env_load,not_applicable,not_applicable,4,0.0003333333333333333
+wrong_variable_combination,ambiguous_local_context,opportunistic_all,Opportunistic all,two_variables_wrong,2,place+activity,not_applicable,not_applicable,2,0.00016666666666666666
+wrong_variable_combination,ambiguous_local_context,opportunistic_all,Opportunistic all,three_variables_wrong,3,activity+env_load+resource_state,not_applicable,not_applicable,1,8.333333333333333e-05
+wrong_variable_combination,ambiguous_local_context,opportunistic_all,Opportunistic all,two_variables_wrong,2,place+resource_state,not_applicable,not_applicable,1,8.333333333333333e-05
+misclassified_context_tuple,ambiguous_local_context,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,meeting_room|focused_work|medium|nominal,53,0.004416666666666667
+misclassified_context_tuple,ambiguous_local_context,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|interacting|medium|nominal,50,0.004166666666666667
+misclassified_context_tuple,ambiguous_local_context,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,office|interacting|medium|nominal,office|focused_work|medium|nominal,49,0.004083333333333333
+misclassified_context_tuple,ambiguous_local_context,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,office|interacting|medium|nominal,meeting_room|interacting|medium|nominal,45,0.00375
+misclassified_context_tuple,ambiguous_local_context,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,office|interacting|medium|nominal,meeting_room|focused_work|medium|nominal,43,0.0035833333333333333
+misclassified_context_tuple,ambiguous_local_context,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,office|focused_work|low|nominal,office|interacting|low|nominal,40,0.0033333333333333335
+misclassified_context_tuple,ambiguous_local_context,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,office|focused_work|low|nominal,meeting_room|focused_work|low|nominal,34,0.0028333333333333335
+misclassified_context_tuple,ambiguous_local_context,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,office|interacting|high|nominal,meeting_room|interacting|high|nominal,32,0.0026666666666666666
+misclassified_context_tuple,ambiguous_local_context,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,meeting_room|interacting|medium|nominal,meeting_room|focused_work|medium|nominal,29,0.002416666666666667
+misclassified_context_tuple,ambiguous_local_context,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,office|interacting|low|nominal,office|focused_work|low|nominal,27,0.00225
+misclassified_context_tuple,ambiguous_local_context,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,meeting_room|focused_work|medium|nominal,office|focused_work|medium|nominal,26,0.0021666666666666666
+misclassified_context_tuple,ambiguous_local_context,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,office|focused_work|low|nominal,meeting_room|interacting|low|nominal,26,0.0021666666666666666
+wrong_variable_combination,ambiguous_local_context,siot_aware,SIoT-aware,all_variables_correct,0,none,not_applicable,not_applicable,1636,0.13633333333333333
+wrong_variable_combination,ambiguous_local_context,siot_aware,SIoT-aware,only_one_variable_wrong,1,place,not_applicable,not_applicable,1462,0.12183333333333334
+wrong_variable_combination,ambiguous_local_context,siot_aware,SIoT-aware,only_one_variable_wrong,1,activity,not_applicable,not_applicable,1353,0.11275
+wrong_variable_combination,ambiguous_local_context,siot_aware,SIoT-aware,two_variables_wrong,2,place+activity,not_applicable,not_applicable,1186,0.09883333333333333
+wrong_variable_combination,ambiguous_local_context,siot_aware,SIoT-aware,two_variables_wrong,2,place+env_load,not_applicable,not_applicable,738,0.0615
+wrong_variable_combination,ambiguous_local_context,siot_aware,SIoT-aware,only_one_variable_wrong,1,env_load,not_applicable,not_applicable,726,0.0605
+wrong_variable_combination,ambiguous_local_context,siot_aware,SIoT-aware,two_variables_wrong,2,activity+env_load,not_applicable,not_applicable,672,0.056
+wrong_variable_combination,ambiguous_local_context,siot_aware,SIoT-aware,three_variables_wrong,3,place+activity+env_load,not_applicable,not_applicable,668,0.05566666666666667
+wrong_variable_combination,ambiguous_local_context,siot_aware,SIoT-aware,only_one_variable_wrong,1,resource_state,not_applicable,not_applicable,662,0.05516666666666667
+wrong_variable_combination,ambiguous_local_context,siot_aware,SIoT-aware,two_variables_wrong,2,place+resource_state,not_applicable,not_applicable,608,0.050666666666666665
+wrong_variable_combination,ambiguous_local_context,siot_aware,SIoT-aware,two_variables_wrong,2,activity+resource_state,not_applicable,not_applicable,510,0.0425
+wrong_variable_combination,ambiguous_local_context,siot_aware,SIoT-aware,three_variables_wrong,3,place+activity+resource_state,not_applicable,not_applicable,482,0.04016666666666667
+misclassified_context_tuple,ambiguous_local_context,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,meeting_room|focused_work|medium|nominal,53,0.004416666666666667
+misclassified_context_tuple,ambiguous_local_context,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|interacting|medium|nominal,51,0.00425
+misclassified_context_tuple,ambiguous_local_context,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,office|interacting|medium|nominal,office|focused_work|medium|nominal,49,0.004083333333333333
+misclassified_context_tuple,ambiguous_local_context,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,office|interacting|medium|nominal,meeting_room|focused_work|medium|nominal,48,0.004
+misclassified_context_tuple,ambiguous_local_context,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,office|focused_work|low|nominal,office|interacting|low|nominal,44,0.0036666666666666666
+misclassified_context_tuple,ambiguous_local_context,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,office|interacting|medium|nominal,meeting_room|interacting|medium|nominal,43,0.0035833333333333333
+misclassified_context_tuple,ambiguous_local_context,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,office|focused_work|low|nominal,meeting_room|focused_work|low|nominal,34,0.0028333333333333335
+misclassified_context_tuple,ambiguous_local_context,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,office|interacting|high|nominal,meeting_room|interacting|high|nominal,31,0.0025833333333333333
+misclassified_context_tuple,ambiguous_local_context,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,meeting_room|interacting|medium|nominal,meeting_room|focused_work|medium|nominal,29,0.002416666666666667
+misclassified_context_tuple,ambiguous_local_context,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,office|focused_work|low|nominal,meeting_room|interacting|low|nominal,29,0.002416666666666667
+misclassified_context_tuple,ambiguous_local_context,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,office|interacting|low|nominal,office|focused_work|low|nominal,29,0.002416666666666667
+misclassified_context_tuple,ambiguous_local_context,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,meeting_room|interacting|medium|nominal,26,0.0021666666666666666
+wrong_variable_combination,ambiguous_local_context,siot_aware_trust_privacy,Privacy-aware SIoT,all_variables_correct,0,none,not_applicable,not_applicable,1459,0.12158333333333333
+wrong_variable_combination,ambiguous_local_context,siot_aware_trust_privacy,Privacy-aware SIoT,only_one_variable_wrong,1,place,not_applicable,not_applicable,1416,0.118
+wrong_variable_combination,ambiguous_local_context,siot_aware_trust_privacy,Privacy-aware SIoT,only_one_variable_wrong,1,activity,not_applicable,not_applicable,1335,0.11125
+wrong_variable_combination,ambiguous_local_context,siot_aware_trust_privacy,Privacy-aware SIoT,two_variables_wrong,2,place+activity,not_applicable,not_applicable,1287,0.10725
+wrong_variable_combination,ambiguous_local_context,siot_aware_trust_privacy,Privacy-aware SIoT,two_variables_wrong,2,place+env_load,not_applicable,not_applicable,726,0.0605
+wrong_variable_combination,ambiguous_local_context,siot_aware_trust_privacy,Privacy-aware SIoT,three_variables_wrong,3,place+activity+env_load,not_applicable,not_applicable,715,0.059583333333333335
+wrong_variable_combination,ambiguous_local_context,siot_aware_trust_privacy,Privacy-aware SIoT,only_one_variable_wrong,1,env_load,not_applicable,not_applicable,681,0.05675
+wrong_variable_combination,ambiguous_local_context,siot_aware_trust_privacy,Privacy-aware SIoT,two_variables_wrong,2,activity+env_load,not_applicable,not_applicable,678,0.0565
+wrong_variable_combination,ambiguous_local_context,siot_aware_trust_privacy,Privacy-aware SIoT,two_variables_wrong,2,place+resource_state,not_applicable,not_applicable,640,0.05333333333333334
+wrong_variable_combination,ambiguous_local_context,siot_aware_trust_privacy,Privacy-aware SIoT,only_one_variable_wrong,1,resource_state,not_applicable,not_applicable,629,0.05241666666666667
+wrong_variable_combination,ambiguous_local_context,siot_aware_trust_privacy,Privacy-aware SIoT,three_variables_wrong,3,place+activity+resource_state,not_applicable,not_applicable,549,0.04575
+wrong_variable_combination,ambiguous_local_context,siot_aware_trust_privacy,Privacy-aware SIoT,two_variables_wrong,2,activity+resource_state,not_applicable,not_applicable,528,0.044
+misclassified_context_tuple,noisy_untrusted_external,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|focused_work|low|nominal,65,0.005416666666666667
+misclassified_context_tuple,noisy_untrusted_external,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,home|focused_work|medium|nominal,58,0.004833333333333334
+misclassified_context_tuple,noisy_untrusted_external,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,home|resting|medium|nominal,home|resting|low|nominal,41,0.003416666666666667
+misclassified_context_tuple,noisy_untrusted_external,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,office|focused_work|low|nominal,home|focused_work|low|nominal,40,0.0033333333333333335
+misclassified_context_tuple,noisy_untrusted_external,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,transit|commuting|high|sparse,home|focused_work|low|nominal,38,0.0031666666666666666
+misclassified_context_tuple,noisy_untrusted_external,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|focused_work|medium|sparse,32,0.0026666666666666666
+misclassified_context_tuple,noisy_untrusted_external,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,office|focused_work|high|nominal,home|focused_work|high|nominal,31,0.0025833333333333333
+misclassified_context_tuple,noisy_untrusted_external,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,home|resting|low|nominal,home|focused_work|low|nominal,28,0.0023333333333333335
+misclassified_context_tuple,noisy_untrusted_external,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,meeting_room|interacting|medium|nominal,meeting_room|interacting|low|nominal,25,0.0020833333333333333
+misclassified_context_tuple,noisy_untrusted_external,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|focused_work|medium|degraded,25,0.0020833333333333333
+misclassified_context_tuple,noisy_untrusted_external,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,home|resting|high|nominal,home|focused_work|high|nominal,23,0.0019166666666666666
+misclassified_context_tuple,noisy_untrusted_external,ego_only,Ego-only,misclassified_context_tuple,-1,not_applicable,home|resting|medium|nominal,home|resting|medium|sparse,22,0.0018333333333333333
+wrong_variable_combination,noisy_untrusted_external,ego_only,Ego-only,all_variables_wrong,4,place+activity+env_load+resource_state,not_applicable,not_applicable,1010,0.08416666666666667
+wrong_variable_combination,noisy_untrusted_external,ego_only,Ego-only,all_variables_correct,0,none,not_applicable,not_applicable,1001,0.08341666666666667
+wrong_variable_combination,noisy_untrusted_external,ego_only,Ego-only,only_one_variable_wrong,1,activity,not_applicable,not_applicable,938,0.07816666666666666
+wrong_variable_combination,noisy_untrusted_external,ego_only,Ego-only,only_one_variable_wrong,1,place,not_applicable,not_applicable,850,0.07083333333333333
+wrong_variable_combination,noisy_untrusted_external,ego_only,Ego-only,two_variables_wrong,2,place+activity,not_applicable,not_applicable,820,0.06833333333333333
+wrong_variable_combination,noisy_untrusted_external,ego_only,Ego-only,three_variables_wrong,3,place+activity+env_load,not_applicable,not_applicable,781,0.06508333333333334
+wrong_variable_combination,noisy_untrusted_external,ego_only,Ego-only,two_variables_wrong,2,activity+env_load,not_applicable,not_applicable,770,0.06416666666666666
+wrong_variable_combination,noisy_untrusted_external,ego_only,Ego-only,only_one_variable_wrong,1,env_load,not_applicable,not_applicable,742,0.06183333333333333
+wrong_variable_combination,noisy_untrusted_external,ego_only,Ego-only,two_variables_wrong,2,place+env_load,not_applicable,not_applicable,737,0.06141666666666667
+wrong_variable_combination,noisy_untrusted_external,ego_only,Ego-only,three_variables_wrong,3,place+activity+resource_state,not_applicable,not_applicable,707,0.058916666666666666
+wrong_variable_combination,noisy_untrusted_external,ego_only,Ego-only,three_variables_wrong,3,activity+env_load+resource_state,not_applicable,not_applicable,662,0.05516666666666667
+wrong_variable_combination,noisy_untrusted_external,ego_only,Ego-only,two_variables_wrong,2,activity+resource_state,not_applicable,not_applicable,628,0.052333333333333336
+misclassified_context_tuple,noisy_untrusted_external,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|focused_work|medium|degraded,64,0.005333333333333333
+misclassified_context_tuple,noisy_untrusted_external,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|focused_work|medium|sparse,56,0.004666666666666667
+misclassified_context_tuple,noisy_untrusted_external,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,home|resting|medium|nominal,home|resting|medium|degraded,49,0.004083333333333333
+misclassified_context_tuple,noisy_untrusted_external,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,home|resting|medium|nominal,home|resting|medium|sparse,43,0.0035833333333333333
+misclassified_context_tuple,noisy_untrusted_external,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|interacting|medium|nominal,40,0.0033333333333333335
+misclassified_context_tuple,noisy_untrusted_external,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,office|focused_work|low|nominal,office|focused_work|low|degraded,39,0.00325
+misclassified_context_tuple,noisy_untrusted_external,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|commuting|medium|nominal,39,0.00325
+misclassified_context_tuple,noisy_untrusted_external,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,office|focused_work|low|nominal,office|focused_work|low|sparse,35,0.002916666666666667
+misclassified_context_tuple,noisy_untrusted_external,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|waiting|medium|nominal,35,0.002916666666666667
+misclassified_context_tuple,noisy_untrusted_external,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,transit|commuting|medium|nominal,transit|commuting|medium|degraded,34,0.0028333333333333335
+misclassified_context_tuple,noisy_untrusted_external,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,home|resting|low|nominal,home|resting|low|sparse,32,0.0026666666666666666
+misclassified_context_tuple,noisy_untrusted_external,opportunistic_all,Opportunistic all,misclassified_context_tuple,-1,not_applicable,transit|commuting|medium|nominal,transit|commuting|medium|sparse,32,0.0026666666666666666
+wrong_variable_combination,noisy_untrusted_external,opportunistic_all,Opportunistic all,all_variables_correct,0,none,not_applicable,not_applicable,3633,0.30275
+wrong_variable_combination,noisy_untrusted_external,opportunistic_all,Opportunistic all,only_one_variable_wrong,1,activity,not_applicable,not_applicable,2151,0.17925
+wrong_variable_combination,noisy_untrusted_external,opportunistic_all,Opportunistic all,only_one_variable_wrong,1,resource_state,not_applicable,not_applicable,1981,0.16508333333333333
+wrong_variable_combination,noisy_untrusted_external,opportunistic_all,Opportunistic all,two_variables_wrong,2,activity+resource_state,not_applicable,not_applicable,1182,0.0985
+wrong_variable_combination,noisy_untrusted_external,opportunistic_all,Opportunistic all,only_one_variable_wrong,1,env_load,not_applicable,not_applicable,718,0.059833333333333336
+wrong_variable_combination,noisy_untrusted_external,opportunistic_all,Opportunistic all,two_variables_wrong,2,activity+env_load,not_applicable,not_applicable,438,0.0365
+wrong_variable_combination,noisy_untrusted_external,opportunistic_all,Opportunistic all,only_one_variable_wrong,1,place,not_applicable,not_applicable,413,0.034416666666666665
+wrong_variable_combination,noisy_untrusted_external,opportunistic_all,Opportunistic all,two_variables_wrong,2,env_load+resource_state,not_applicable,not_applicable,397,0.03308333333333333
+wrong_variable_combination,noisy_untrusted_external,opportunistic_all,Opportunistic all,three_variables_wrong,3,activity+env_load+resource_state,not_applicable,not_applicable,262,0.021833333333333333
+wrong_variable_combination,noisy_untrusted_external,opportunistic_all,Opportunistic all,two_variables_wrong,2,place+resource_state,not_applicable,not_applicable,245,0.020416666666666666
+wrong_variable_combination,noisy_untrusted_external,opportunistic_all,Opportunistic all,two_variables_wrong,2,place+activity,not_applicable,not_applicable,240,0.02
+wrong_variable_combination,noisy_untrusted_external,opportunistic_all,Opportunistic all,three_variables_wrong,3,place+activity+resource_state,not_applicable,not_applicable,136,0.011333333333333334
+misclassified_context_tuple,noisy_untrusted_external,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|focused_work|low|nominal,60,0.005
+misclassified_context_tuple,noisy_untrusted_external,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|focused_work|medium|degraded,38,0.0031666666666666666
+misclassified_context_tuple,noisy_untrusted_external,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,home|resting|medium|nominal,home|resting|low|nominal,37,0.0030833333333333333
+misclassified_context_tuple,noisy_untrusted_external,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|focused_work|medium|sparse,34,0.0028333333333333335
+misclassified_context_tuple,noisy_untrusted_external,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,home|resting|medium|nominal,home|resting|medium|sparse,29,0.002416666666666667
+misclassified_context_tuple,noisy_untrusted_external,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,meeting_room|interacting|medium|nominal,meeting_room|interacting|low|nominal,26,0.0021666666666666666
+misclassified_context_tuple,noisy_untrusted_external,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,office|focused_work|low|nominal,office|focused_work|low|sparse,25,0.0020833333333333333
+misclassified_context_tuple,noisy_untrusted_external,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,office|focused_work|low|nominal,office|focused_work|low|degraded,23,0.0019166666666666666
+misclassified_context_tuple,noisy_untrusted_external,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,office|focused_work|low|nominal,office|focused_work|medium|nominal,23,0.0019166666666666666
+misclassified_context_tuple,noisy_untrusted_external,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|commuting|medium|nominal,23,0.0019166666666666666
+misclassified_context_tuple,noisy_untrusted_external,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,home|focused_work|medium|nominal,22,0.0018333333333333333
+misclassified_context_tuple,noisy_untrusted_external,siot_aware,SIoT-aware,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|focused_work|high|nominal,22,0.0018333333333333333
+wrong_variable_combination,noisy_untrusted_external,siot_aware,SIoT-aware,all_variables_correct,0,none,not_applicable,not_applicable,1174,0.09783333333333333
+wrong_variable_combination,noisy_untrusted_external,siot_aware,SIoT-aware,only_one_variable_wrong,1,env_load,not_applicable,not_applicable,982,0.08183333333333333
+wrong_variable_combination,noisy_untrusted_external,siot_aware,SIoT-aware,only_one_variable_wrong,1,activity,not_applicable,not_applicable,967,0.08058333333333334
+wrong_variable_combination,noisy_untrusted_external,siot_aware,SIoT-aware,only_one_variable_wrong,1,place,not_applicable,not_applicable,874,0.07283333333333333
+wrong_variable_combination,noisy_untrusted_external,siot_aware,SIoT-aware,only_one_variable_wrong,1,resource_state,not_applicable,not_applicable,858,0.0715
+wrong_variable_combination,noisy_untrusted_external,siot_aware,SIoT-aware,two_variables_wrong,2,activity+env_load,not_applicable,not_applicable,790,0.06583333333333333
+wrong_variable_combination,noisy_untrusted_external,siot_aware,SIoT-aware,two_variables_wrong,2,place+env_load,not_applicable,not_applicable,759,0.06325
+wrong_variable_combination,noisy_untrusted_external,siot_aware,SIoT-aware,two_variables_wrong,2,env_load+resource_state,not_applicable,not_applicable,743,0.06191666666666667
+wrong_variable_combination,noisy_untrusted_external,siot_aware,SIoT-aware,two_variables_wrong,2,place+activity,not_applicable,not_applicable,699,0.05825
+wrong_variable_combination,noisy_untrusted_external,siot_aware,SIoT-aware,three_variables_wrong,3,place+activity+env_load,not_applicable,not_applicable,680,0.056666666666666664
+wrong_variable_combination,noisy_untrusted_external,siot_aware,SIoT-aware,two_variables_wrong,2,activity+resource_state,not_applicable,not_applicable,641,0.05341666666666667
+wrong_variable_combination,noisy_untrusted_external,siot_aware,SIoT-aware,three_variables_wrong,3,activity+env_load+resource_state,not_applicable,not_applicable,593,0.049416666666666664
+misclassified_context_tuple,noisy_untrusted_external,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|focused_work|low|nominal,62,0.005166666666666667
+misclassified_context_tuple,noisy_untrusted_external,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|focused_work|medium|sparse,36,0.003
+misclassified_context_tuple,noisy_untrusted_external,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,home|resting|medium|nominal,home|resting|low|nominal,35,0.002916666666666667
+misclassified_context_tuple,noisy_untrusted_external,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|focused_work|medium|degraded,34,0.0028333333333333335
+misclassified_context_tuple,noisy_untrusted_external,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,home|resting|medium|nominal,home|resting|medium|sparse,29,0.002416666666666667
+misclassified_context_tuple,noisy_untrusted_external,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,meeting_room|interacting|medium|nominal,meeting_room|interacting|low|nominal,26,0.0021666666666666666
+misclassified_context_tuple,noisy_untrusted_external,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,office|focused_work|low|nominal,office|focused_work|low|sparse,26,0.0021666666666666666
+misclassified_context_tuple,noisy_untrusted_external,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,home|focused_work|medium|nominal,25,0.0020833333333333333
+misclassified_context_tuple,noisy_untrusted_external,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|commuting|medium|nominal,22,0.0018333333333333333
+misclassified_context_tuple,noisy_untrusted_external,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|focused_work|high|nominal,22,0.0018333333333333333
+misclassified_context_tuple,noisy_untrusted_external,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,office|focused_work|medium|nominal,office|focused_work|low|degraded,22,0.0018333333333333333
+misclassified_context_tuple,noisy_untrusted_external,siot_aware_trust_privacy,Privacy-aware SIoT,misclassified_context_tuple,-1,not_applicable,transit|commuting|medium|nominal,transit|commuting|low|nominal,22,0.0018333333333333333
+wrong_variable_combination,noisy_untrusted_external,siot_aware_trust_privacy,Privacy-aware SIoT,all_variables_correct,0,none,not_applicable,not_applicable,1141,0.09508333333333334
+wrong_variable_combination,noisy_untrusted_external,siot_aware_trust_privacy,Privacy-aware SIoT,only_one_variable_wrong,1,activity,not_applicable,not_applicable,963,0.08025
+wrong_variable_combination,noisy_untrusted_external,siot_aware_trust_privacy,Privacy-aware SIoT,only_one_variable_wrong,1,env_load,not_applicable,not_applicable,960,0.08
+wrong_variable_combination,noisy_untrusted_external,siot_aware_trust_privacy,Privacy-aware SIoT,only_one_variable_wrong,1,place,not_applicable,not_applicable,867,0.07225
+wrong_variable_combination,noisy_untrusted_external,siot_aware_trust_privacy,Privacy-aware SIoT,only_one_variable_wrong,1,resource_state,not_applicable,not_applicable,810,0.0675
+wrong_variable_combination,noisy_untrusted_external,siot_aware_trust_privacy,Privacy-aware SIoT,two_variables_wrong,2,activity+env_load,not_applicable,not_applicable,808,0.06733333333333333
+wrong_variable_combination,noisy_untrusted_external,siot_aware_trust_privacy,Privacy-aware SIoT,two_variables_wrong,2,place+env_load,not_applicable,not_applicable,775,0.06458333333333334
+wrong_variable_combination,noisy_untrusted_external,siot_aware_trust_privacy,Privacy-aware SIoT,two_variables_wrong,2,env_load+resource_state,not_applicable,not_applicable,736,0.06133333333333333
+wrong_variable_combination,noisy_untrusted_external,siot_aware_trust_privacy,Privacy-aware SIoT,two_variables_wrong,2,place+activity,not_applicable,not_applicable,724,0.060333333333333336
+wrong_variable_combination,noisy_untrusted_external,siot_aware_trust_privacy,Privacy-aware SIoT,three_variables_wrong,3,place+activity+env_load,not_applicable,not_applicable,696,0.058
+wrong_variable_combination,noisy_untrusted_external,siot_aware_trust_privacy,Privacy-aware SIoT,two_variables_wrong,2,activity+resource_state,not_applicable,not_applicable,636,0.053
+wrong_variable_combination,noisy_untrusted_external,siot_aware_trust_privacy,Privacy-aware SIoT,three_variables_wrong,3,activity+env_load+resource_state,not_applicable,not_applicable,615,0.05125

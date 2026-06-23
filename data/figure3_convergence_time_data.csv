@@ -1,0 +1,17 @@
+scenario,policy,policy_label,convergence_time,convergence_time_ci95_low,convergence_time_ci95_high
+nominal,ego_only,Ego-only,5.1449372635045,4.852742195319809,5.430709824698409
+nominal,opportunistic_all,Opportunistic all,0.24082944509058926,0.22329323708007,0.25776196180643496
+nominal,siot_aware,SIoT-aware,3.35704891283075,3.1689021518141556,3.5643099557014875
+nominal,siot_aware_trust_privacy,Privacy-aware SIoT,3.575237243406498,3.3840434093399763,3.7800243345762508
+degraded_ego,ego_only,Ego-only,24.594422389167498,22.212221708017168,27.02767166813015
+degraded_ego,opportunistic_all,Opportunistic all,0.2910996000813885,0.2716057969312317,0.3112151535171974
+degraded_ego,siot_aware,SIoT-aware,4.978320868895245,4.53312730497801,5.521453839332304
+degraded_ego,siot_aware_trust_privacy,Privacy-aware SIoT,5.633456656204532,5.052487146975675,6.314999215832258
+ambiguous_local_context,ego_only,Ego-only,11.854413579024229,10.541311872779879,13.429450311759876
+ambiguous_local_context,opportunistic_all,Opportunistic all,0.352712394553041,0.3264256745268302,0.37926870079204816
+ambiguous_local_context,siot_aware,SIoT-aware,5.174127406215148,4.824104787210941,5.541994078252351
+ambiguous_local_context,siot_aware_trust_privacy,Privacy-aware SIoT,5.742378921411674,5.28618153680857,6.316971931156215
+noisy_untrusted_external,ego_only,Ego-only,8.048235768478209,7.324203781878744,8.857975672407072
+noisy_untrusted_external,opportunistic_all,Opportunistic all,2.1836058172195214,2.0589019183053994,2.3081373625834054
+noisy_untrusted_external,siot_aware,SIoT-aware,7.322136913453526,6.669251435485141,8.030477513919749
+noisy_untrusted_external,siot_aware_trust_privacy,Privacy-aware SIoT,7.685282712123013,6.952989049602774,8.60154453377106

@@ -1,0 +1,65 @@
+scenario,policy,missingness_bin,overall_context_accuracy,observations,policy_label
+nominal,ego_only,"[0.0, 0.25)",0.21347150259067357,5790,Ego-only
+nominal,ego_only,"[0.25, 0.5)",0.1052910052910053,3780,Ego-only
+nominal,ego_only,"[0.5, 0.75)",0.02162478082992402,1711,Ego-only
+nominal,ego_only,"[0.75, 1.01)",0.004172461752433936,719,Ego-only
+nominal,opportunistic_all,"[0.0, 0.25)",0.786873920552677,5790,Opportunistic all
+nominal,opportunistic_all,"[0.25, 0.5)",0.8052910052910053,3780,Opportunistic all
+nominal,opportunistic_all,"[0.5, 0.75)",0.8194038573933372,1711,Opportunistic all
+nominal,opportunistic_all,"[0.75, 1.01)",0.9068150208623088,719,Opportunistic all
+nominal,siot_aware,"[0.0, 0.25)",0.23056994818652848,5790,SIoT-aware
+nominal,siot_aware,"[0.25, 0.5)",0.18703703703703703,3780,SIoT-aware
+nominal,siot_aware,"[0.5, 0.75)",0.2074810052600818,1711,SIoT-aware
+nominal,siot_aware,"[0.75, 1.01)",0.325452016689847,719,SIoT-aware
+nominal,siot_aware_trust_privacy,"[0.0, 0.25)",0.21347150259067357,5790,Privacy-aware SIoT
+nominal,siot_aware_trust_privacy,"[0.25, 0.5)",0.1738095238095238,3780,Privacy-aware SIoT
+nominal,siot_aware_trust_privacy,"[0.5, 0.75)",0.1852717708942139,1711,Privacy-aware SIoT
+nominal,siot_aware_trust_privacy,"[0.75, 1.01)",0.3129346314325452,719,Privacy-aware SIoT
+degraded_ego,ego_only,"[0.0, 0.25)",0.036231884057971016,828,Ego-only
+degraded_ego,ego_only,"[0.25, 0.5)",0.039186691312384475,2705,Ego-only
+degraded_ego,ego_only,"[0.5, 0.75)",0.01879162702188392,4204,Ego-only
+degraded_ego,ego_only,"[0.75, 1.01)",0.007741027445460943,4263,Ego-only
+degraded_ego,opportunistic_all,"[0.0, 0.25)",0.6582125603864735,828,Opportunistic all
+degraded_ego,opportunistic_all,"[0.25, 0.5)",0.6787430683918669,2705,Opportunistic all
+degraded_ego,opportunistic_all,"[0.5, 0.75)",0.7592768791627021,4204,Opportunistic all
+degraded_ego,opportunistic_all,"[0.75, 1.01)",0.8712174524982407,4263,Opportunistic all
+degraded_ego,siot_aware,"[0.0, 0.25)",0.04710144927536232,828,SIoT-aware
+degraded_ego,siot_aware,"[0.25, 0.5)",0.06913123844731978,2705,SIoT-aware
+degraded_ego,siot_aware,"[0.5, 0.75)",0.131779257849667,4204,SIoT-aware
+degraded_ego,siot_aware,"[0.75, 1.01)",0.24912033779028853,4263,SIoT-aware
+degraded_ego,siot_aware_trust_privacy,"[0.0, 0.25)",0.036231884057971016,828,Privacy-aware SIoT
+degraded_ego,siot_aware_trust_privacy,"[0.25, 0.5)",0.059149722735674676,2705,Privacy-aware SIoT
+degraded_ego,siot_aware_trust_privacy,"[0.5, 0.75)",0.11322549952426261,4204,Privacy-aware SIoT
+degraded_ego,siot_aware_trust_privacy,"[0.75, 1.01)",0.22800844475721324,4263,Privacy-aware SIoT
+ambiguous_local_context,ego_only,"[0.0, 0.25)",0.08968963703314045,3802,Ego-only
+ambiguous_local_context,ego_only,"[0.25, 0.5)",0.05290293656130912,4461,Ego-only
+ambiguous_local_context,ego_only,"[0.5, 0.75)",0.018698870276587457,2567,Ego-only
+ambiguous_local_context,ego_only,"[0.75, 1.01)",0.002564102564102564,1170,Ego-only
+ambiguous_local_context,opportunistic_all,"[0.0, 0.25)",0.688321935823251,3802,Opportunistic all
+ambiguous_local_context,opportunistic_all,"[0.25, 0.5)",0.7321228424120152,4461,Opportunistic all
+ambiguous_local_context,opportunistic_all,"[0.5, 0.75)",0.7830151928320997,2567,Opportunistic all
+ambiguous_local_context,opportunistic_all,"[0.75, 1.01)",0.8743589743589744,1170,Opportunistic all
+ambiguous_local_context,siot_aware,"[0.0, 0.25)",0.1020515518148343,3802,SIoT-aware
+ambiguous_local_context,siot_aware,"[0.25, 0.5)",0.1071508630351939,4461,SIoT-aware
+ambiguous_local_context,siot_aware,"[0.5, 0.75)",0.17880794701986755,2567,SIoT-aware
+ambiguous_local_context,siot_aware,"[0.75, 1.01)",0.2658119658119658,1170,SIoT-aware
+ambiguous_local_context,siot_aware_trust_privacy,"[0.0, 0.25)",0.08968963703314045,3802,Privacy-aware SIoT
+ambiguous_local_context,siot_aware_trust_privacy,"[0.25, 0.5)",0.09773593364716432,4461,Privacy-aware SIoT
+ambiguous_local_context,siot_aware_trust_privacy,"[0.5, 0.75)",0.15426567978184652,2567,Privacy-aware SIoT
+ambiguous_local_context,siot_aware_trust_privacy,"[0.75, 1.01)",0.24444444444444444,1170,Privacy-aware SIoT
+noisy_untrusted_external,ego_only,"[0.0, 0.25)",0.1422103861517976,3755,Ego-only
+noisy_untrusted_external,ego_only,"[0.25, 0.5)",0.08318505338078291,4496,Ego-only
+noisy_untrusted_external,ego_only,"[0.5, 0.75)",0.031914893617021274,2632,Ego-only
+noisy_untrusted_external,ego_only,"[0.75, 1.01)",0.008057296329453895,1117,Ego-only
+noisy_untrusted_external,opportunistic_all,"[0.0, 0.25)",0.2934753661784288,3755,Opportunistic all
+noisy_untrusted_external,opportunistic_all,"[0.25, 0.5)",0.298932384341637,4496,Opportunistic all
+noisy_untrusted_external,opportunistic_all,"[0.5, 0.75)",0.3126899696048632,2632,Opportunistic all
+noisy_untrusted_external,opportunistic_all,"[0.75, 1.01)",0.3258728737690242,1117,Opportunistic all
+noisy_untrusted_external,siot_aware,"[0.0, 0.25)",0.1422103861517976,3755,SIoT-aware
+noisy_untrusted_external,siot_aware,"[0.25, 0.5)",0.09564056939501779,4496,SIoT-aware
+noisy_untrusted_external,siot_aware,"[0.5, 0.75)",0.06534954407294832,2632,SIoT-aware
+noisy_untrusted_external,siot_aware,"[0.75, 1.01)",0.03401969561324977,1117,SIoT-aware
+noisy_untrusted_external,siot_aware_trust_privacy,"[0.0, 0.25)",0.1422103861517976,3755,Privacy-aware SIoT
+noisy_untrusted_external,siot_aware_trust_privacy,"[0.25, 0.5)",0.09008007117437722,4496,Privacy-aware SIoT
+noisy_untrusted_external,siot_aware_trust_privacy,"[0.5, 0.75)",0.06344984802431611,2632,Privacy-aware SIoT
+noisy_untrusted_external,siot_aware_trust_privacy,"[0.75, 1.01)",0.03133393017009848,1117,Privacy-aware SIoT

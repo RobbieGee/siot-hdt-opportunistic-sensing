@@ -1,0 +1,173 @@
+Validation report
+
+PASS: CSV exists: aggregated_metrics.csv
+  data/aggregated_metrics.csv
+PASS: CSV exists: table1_main_results.csv
+  data/table1_main_results.csv
+PASS: CSV exists: table2_overhead_results.csv
+  data/table2_overhead_results.csv
+PASS: CSV exists: table3_adaptive_ablation_results.csv
+  data/table3_adaptive_ablation_results.csv
+PASS: CSV exists: siot_graph_summary.csv
+  data/siot_graph_summary.csv
+PASS: CSV exists: siot_relation_distribution.csv
+  data/siot_relation_distribution.csv
+PASS: CSV exists: siot_candidate_pool_summary.csv
+  data/siot_candidate_pool_summary.csv
+PASS: CSV exists: adaptive_diagnostics.csv
+  data/adaptive_diagnostics.csv
+PASS: CSV exists: simulator_parameter_table.csv
+  data/simulator_parameter_table.csv
+PASS: CSV exists: context_state_distribution.csv
+  data/context_state_distribution.csv
+PASS: CSV exists: context_transition_summary.csv
+  data/context_transition_summary.csv
+PASS: CSV exists: per_variable_error_rates.csv
+  data/per_variable_error_rates.csv
+PASS: CSV exists: per_variable_macro_f1.csv
+  data/per_variable_macro_f1.csv
+PASS: CSV exists: hardest_variable_by_scenario_policy.csv
+  data/hardest_variable_by_scenario_policy.csv
+PASS: CSV exists: joint_error_pattern_summary.csv
+  data/joint_error_pattern_summary.csv
+PASS: CSV exists: convergence_cost_results.csv
+  data/convergence_cost_results.csv
+PASS: CSV exists: cost_effectiveness_results.csv
+  data/cost_effectiveness_results.csv
+PASS: CSV exists: pareto_policy_results.csv
+  data/pareto_policy_results.csv
+PASS: CSV exists: net_utility_sensitivity.csv
+  data/net_utility_sensitivity.csv
+PASS: CSV exists: budget_matched_results.csv
+  data/budget_matched_results.csv
+PASS: CSV exists: budget_matched_overhead.csv
+  data/budget_matched_overhead.csv
+PASS: CSV exists: discovery_mode_comparison.csv
+  data/discovery_mode_comparison.csv
+PASS: CSV exists: scalability_results.csv
+  data/scalability_results.csv
+PASS: CSV exists: scalability_graph_summary.csv
+  data/scalability_graph_summary.csv
+PASS: CSV exists: sensitivity_hop_radius.csv
+  data/sensitivity_hop_radius.csv
+PASS: CSV exists: sensitivity_selection_cap.csv
+  data/sensitivity_selection_cap.csv
+PASS: CSV exists: sensitivity_privacy_penalty.csv
+  data/sensitivity_privacy_penalty.csv
+PASS: CSV exists: sensitivity_degraded_fraction.csv
+  data/sensitivity_degraded_fraction.csv
+PASS: CSV exists: sensitivity_graph_density.csv
+  data/sensitivity_graph_density.csv
+PASS: CSV exists: sensitivity_graph_topology.csv
+  data/sensitivity_graph_topology.csv
+PASS: Text report exists: consistency_check_report.txt
+  data/consistency_check_report.txt
+PASS: Figure exists: overall_accuracy_by_scenario_policy.png
+  figures/overall_accuracy_by_scenario_policy.png
+PASS: Figure exists: macro_f1_by_variable_policy.png
+  figures/macro_f1_by_variable_policy.png
+PASS: Figure exists: performance_vs_ego_missingness.png
+  figures/performance_vs_ego_missingness.png
+PASS: Figure exists: convergence_time_by_policy_scenario.png
+  figures/convergence_time_by_policy_scenario.png
+PASS: Figure exists: effective_recovery_cost_by_policy_scenario.png
+  figures/effective_recovery_cost_by_policy_scenario.png
+PASS: Figure exists: budget_matched_oca_cost_comparison.png
+  figures/budget_matched_oca_cost_comparison.png
+PASS: Figure exists: pareto_oca_vs_total_cost.png
+  figures/pareto_oca_vs_total_cost.png
+PASS: Figure exists: pareto_oca_vs_privacy_cost.png
+  figures/pareto_oca_vs_privacy_cost.png
+PASS: Figure exists: oca_per_cost_by_policy_scenario.png
+  figures/oca_per_cost_by_policy_scenario.png
+PASS: Figure exists: scalability_total_cost_vs_graph_size.png
+  figures/scalability_total_cost_vs_graph_size.png
+PASS: Figure exists: scalability_oca_vs_graph_size.png
+  figures/scalability_oca_vs_graph_size.png
+PASS: Figure exists: scalability_oca_per_cost_vs_graph_size.png
+  figures/scalability_oca_per_cost_vs_graph_size.png
+PASS: Figure exists: discovery_mode_oca_cost_comparison.png
+  figures/discovery_mode_oca_cost_comparison.png
+PASS: Figure exists: overall_accuracy_by_scenario_policy.pdf
+  figures/overall_accuracy_by_scenario_policy.pdf
+PASS: Figure exists: macro_f1_by_variable_policy.pdf
+  figures/macro_f1_by_variable_policy.pdf
+PASS: Figure exists: performance_vs_ego_missingness.pdf
+  figures/performance_vs_ego_missingness.pdf
+PASS: Figure exists: convergence_time_by_policy_scenario.pdf
+  figures/convergence_time_by_policy_scenario.pdf
+PASS: Figure exists: effective_recovery_cost_by_policy_scenario.pdf
+  figures/effective_recovery_cost_by_policy_scenario.pdf
+PASS: Figure exists: budget_matched_oca_cost_comparison.pdf
+  figures/budget_matched_oca_cost_comparison.pdf
+PASS: Figure exists: pareto_oca_vs_total_cost.pdf
+  figures/pareto_oca_vs_total_cost.pdf
+PASS: Figure exists: pareto_oca_vs_privacy_cost.pdf
+  figures/pareto_oca_vs_privacy_cost.pdf
+PASS: Figure exists: oca_per_cost_by_policy_scenario.pdf
+  figures/oca_per_cost_by_policy_scenario.pdf
+PASS: Figure exists: scalability_total_cost_vs_graph_size.pdf
+  figures/scalability_total_cost_vs_graph_size.pdf
+PASS: Figure exists: scalability_oca_vs_graph_size.pdf
+  figures/scalability_oca_vs_graph_size.pdf
+PASS: Figure exists: scalability_oca_per_cost_vs_graph_size.pdf
+  figures/scalability_oca_per_cost_vs_graph_size.pdf
+PASS: Figure exists: discovery_mode_oca_cost_comparison.pdf
+  figures/discovery_mode_oca_cost_comparison.pdf
+PASS: Raw step output exists as generated CSV or release gzip archive
+  data/raw_step_results.csv; data/raw_step_results.csv.gz
+PASS: Release raw step gzip archive exists
+  data/raw_step_results.csv.gz
+PASS: No NaN in key metric columns
+  overall_context_accuracy,mean_variable_accuracy,avg_selected_source_count,avg_estimated_latency,avg_privacy_exposure_cost
+PASS: All policies appear in all scenarios
+  []
+PASS: Graph discovery returns non-empty candidate pools for non-ego policies
+PASS: ego_only recruits zero sources
+PASS: opportunistic_all recruits all discovered candidates
+PASS: Selective policies respect active selection caps
+PASS: opportunistic_all recruits at least as many sources as selective policies on average
+PASS: All OCA/MVA/F1 values are within [0,1]
+PASS: Privacy and latency proxies are non-negative
+PASS: Discovery and total operational costs are non-negative
+PASS: discovery_mode exists in raw and metrics outputs
+PASS: Metadata present: table1_main_results.csv
+PASS: Metadata present: aggregated_metrics.csv
+PASS: Metadata present: discovery_mode_comparison.csv
+PASS: Metadata present: budget_matched_results.csv
+PASS: Metadata present: scalability_results.csv
+PASS: No stale output files detected in metadata-bearing result files
+PASS: Main Table 1 policies use intended default discovery modes
+PASS: Table 1 values match aggregated_metrics input
+PASS: Discovery-mode comparison variants use intended discovery modes
+PASS: Discovery-mode comparison uses separate experiment_tag from Table 1
+  discovery_mode_comparison
+PASS: Values across different experiment_tag values are not assumed identical
+  main=['main_default'], comparison=['discovery_mode_comparison']
+PASS: Default SIoT-aware policies use bounded relationship-guided discovery
+PASS: opportunistic_all uses exhaustive hop discovery
+PASS: Bounded discovery respects active node budget
+PASS: Bounded discovery respects active edge budget
+PASS: Bounded discovery respects max candidates to score
+PASS: Discovered candidates do not exceed visited nodes
+PASS: all_variables_covered_by_candidates is boolean
+PASS: all_variables_covered_by_recruited_sources is boolean
+PASS: stopped_by_budget is boolean
+PASS: stopped_by_coverage is boolean
+PASS: stopped_by_quality is boolean
+PASS: stopped_by_frontier_empty is boolean
+PASS: adaptive_triggered is boolean
+PASS: All random seeds are recorded
+  [7, 11, 13, 17, 19]
+PASS: Default graph average shortest path is approximately 3-4 hops
+  mean=3.625
+PASS: Default 2-hop ego pool does not include nearly all sources
+  mean_share=0.508
+PASS: Ego belongs to dominant connected component
+  min=1.000
+PASS: All relation types are present
+PASS: Budget-matched policies appear in all scenarios
+  []
+PASS: Budget-matched policies respect k on average
+
+Overall status: PASS

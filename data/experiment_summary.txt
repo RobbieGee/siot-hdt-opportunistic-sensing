@@ -1,0 +1,47 @@
+SIoT Opportunistic Context Enrichment: Experimental Summary
+
+Best-performing policy by scenario:
+- nominal: opportunistic_all (OCA=0.804, MVA=0.948)
+- degraded_ego: opportunistic_all (OCA=0.774, MVA=0.940)
+- ambiguous_local_context: opportunistic_all (OCA=0.743, MVA=0.931)
+- noisy_untrusted_external: opportunistic_all (OCA=0.303, MVA=0.749)
+
+Table 1 OCA values:
+- nominal / ego_only: 0.140 [0.133, 0.146]
+- nominal / opportunistic_all: 0.804 [0.793, 0.816]
+- nominal / siot_aware: 0.219 [0.211, 0.228]
+- nominal / siot_aware_trust_privacy: 0.203 [0.195, 0.210]
+- degraded_ego / ego_only: 0.021 [0.018, 0.023]
+- degraded_ego / opportunistic_all: 0.774 [0.763, 0.784]
+- degraded_ego / siot_aware: 0.153 [0.146, 0.162]
+- degraded_ego / siot_aware_trust_privacy: 0.137 [0.129, 0.144]
+- ambiguous_local_context / ego_only: 0.052 [0.048, 0.056]
+- ambiguous_local_context / opportunistic_all: 0.743 [0.729, 0.756]
+- ambiguous_local_context / siot_aware: 0.136 [0.130, 0.142]
+- ambiguous_local_context / siot_aware_trust_privacy: 0.122 [0.116, 0.128]
+- noisy_untrusted_external / ego_only: 0.083 [0.078, 0.088]
+- noisy_untrusted_external / opportunistic_all: 0.303 [0.295, 0.311]
+- noisy_untrusted_external / siot_aware: 0.098 [0.092, 0.104]
+- noisy_untrusted_external / siot_aware_trust_privacy: 0.095 [0.089, 0.101]
+
+Table 2 overhead means:
+- nominal / ego_only: sources=0.00, total_cost=0.00, latency=0.00, privacy=0.00
+- nominal / opportunistic_all: sources=53.46, total_cost=241.05, latency=1.31, privacy=8.49
+- nominal / siot_aware: sources=3.21, total_cost=56.80, latency=0.58, privacy=1.04
+- nominal / siot_aware_trust_privacy: sources=2.98, total_cost=56.45, latency=0.57, privacy=0.97
+- degraded_ego / ego_only: sources=0.00, total_cost=0.00, latency=0.00, privacy=0.00
+- degraded_ego / opportunistic_all: sources=53.55, total_cost=242.41, latency=1.33, privacy=8.51
+- degraded_ego / siot_aware: sources=4.13, total_cost=59.64, latency=0.63, privacy=1.10
+- degraded_ego / siot_aware_trust_privacy: sources=3.89, total_cost=59.29, latency=0.62, privacy=1.05
+- ambiguous_local_context / ego_only: sources=0.00, total_cost=0.00, latency=0.00, privacy=0.00
+- ambiguous_local_context / opportunistic_all: sources=53.53, total_cost=241.19, latency=1.32, privacy=8.49
+- ambiguous_local_context / siot_aware: sources=3.40, total_cost=57.28, latency=0.60, privacy=1.06
+- ambiguous_local_context / siot_aware_trust_privacy: sources=3.12, total_cost=56.86, latency=0.58, privacy=0.97
+- noisy_untrusted_external / ego_only: sources=0.00, total_cost=0.00, latency=0.00, privacy=0.00
+- noisy_untrusted_external / opportunistic_all: sources=53.45, total_cost=245.27, latency=1.54, privacy=8.46
+- noisy_untrusted_external / siot_aware: sources=2.09, total_cost=56.04, latency=0.66, privacy=0.72
+- noisy_untrusted_external / siot_aware_trust_privacy: sources=1.48, total_cost=55.12, latency=0.63, privacy=0.50
+
+Adaptive ablation modes:
+- adaptive_disabled: mean OCA=0.115, mean adaptive activation=0.000
+- adaptive_enabled: mean OCA=0.145, mean adaptive activation=0.361

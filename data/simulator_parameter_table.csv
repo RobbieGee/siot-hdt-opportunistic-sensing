@@ -1,0 +1,91 @@
+category,parameter,value,description
+experiment,episodes,50,Main episodes per seed and scenario.
+experiment,timesteps_per_episode,48,Discrete timesteps per episode.
+experiment,seeds,"[7, 11, 13, 17, 19]",Main deterministic random seeds.
+experiment,bootstrap_basis,seed_episode_combinations,Bootstrap unit used for confidence intervals.
+experiment,bootstrap_samples,1000,Bootstrap resamples for 95% confidence intervals.
+graph,number_of_external_source_nodes,60,External SIoT object/source nodes.
+graph,number_of_relation_types,5,Typed SIoT edge labels.
+graph,relation_types,"['OOR', 'CLOR', 'CWOR', 'SOR', 'POR']",Supported SIoT relationship types.
+relation_utility,OOR,1.0,Default relation utility used in discovery/ranking.
+relation_utility,CLOR,0.8,Default relation utility used in discovery/ranking.
+relation_utility,CWOR,0.8,Default relation utility used in discovery/ranking.
+relation_utility,SOR,0.6,Default relation utility used in discovery/ranking.
+relation_utility,POR,0.5,Default relation utility used in discovery/ranking.
+graph,ego_personal_device_count,3,Ego-associated OOR devices.
+graph,environmental_source_count,16,Environmental source count target.
+graph,infrastructure_source_count,14,Infrastructure source count target.
+graph,vehicle_source_count,8,Vehicle source count target.
+graph,graph_density_mode,default,Default graph-density setting.
+graph,graph_density_edge_probabilities,"{'sparse': 0.004, 'default': 0.01, 'dense': 0.02}",Extra typed-edge probability by density.
+graph,ego_layer1_candidate_min,5,Lower target for ego 1-hop candidate pool.
+graph,ego_layer1_candidate_max,8,Upper target for ego 1-hop candidate pool.
+graph,target_average_shortest_path,3.0-4.0,Default graph path-length target.
+adaptive,baseline_hop_radius,2,Normal graph discovery radius.
+adaptive,adaptive_hop_radius,3,Broadened graph discovery radius.
+adaptive,default_selection_cap,3,Selective recruitment cap in normal mode.
+adaptive,adaptive_selection_cap,5,Selective recruitment cap in adaptive mode.
+bounded_discovery,default_mode_for_siot_aware,bounded_relationship_guided,Default discovery mode for SIoT-aware selective policies.
+bounded_discovery,exhaustive_mode,exhaustive_hop,High-coverage hop-limited reference discovery mode.
+bounded_discovery,small_graph_node_edge_score_budget,"(20, 40, 12)",Bounded discovery budget for small graphs.
+bounded_discovery,medium_graph_node_edge_score_budget,"(30, 70, 18)",Bounded discovery budget for medium graphs.
+bounded_discovery,large_graph_node_edge_score_budget,"(40, 100, 24)",Bounded discovery budget for large graphs.
+bounded_discovery,adaptive_discovery_budget_multiplier,1.35,Multiplier applied to bounded discovery budgets under adaptive broadening.
+bounded_discovery,min_candidates_required,8,Minimum candidates before bounded early stopping.
+bounded_discovery,min_variable_coverage,4,Minimum distinct context variables covered before quality-based bounded stopping.
+bounded_discovery,early_stop_when_all_variables_covered,True,Whether bounded discovery stops when all variables are covered and quality thresholds are met.
+bounded_discovery,early_stop_min_quality,0.1,Minimum expected candidate quality for bounded early stopping.
+bounded_discovery,max_neighbors_per_expansion,8,Per-node beam width for bounded relationship-guided frontier expansion.
+bounded_discovery,relation_priority_weights,"{'OOR': 1.0, 'CLOR': 0.8, 'CWOR': 0.8, 'SOR': 0.6, 'POR': 0.5}",SIoT relation priorities used by bounded discovery.
+bounded_discovery,privacy_penalty,0.35,Expected privacy penalty used during bounded discovery expansion.
+bounded_discovery,latency_penalty,0.25,Expected latency penalty used during bounded discovery expansion.
+adaptive,ego_missingness_threshold,0.5,Adaptive trigger threshold for ego missingness.
+adaptive,ego_confidence_threshold,0.35,Adaptive trigger threshold for ego confidence.
+adaptive,unresolved_variable_threshold,2,Adaptive trigger threshold for unresolved variables.
+scenario,degraded_external_fraction,0.25,Default noisy-external degraded-source fraction.
+ranking,trigger_threshold,0.18,Minimum selective recruitment score before fallback.
+ranking,privacy_penalty_strength,1.0,Privacy divisor strength for privacy-aware SIoT.
+cost,relation_traversal_costs,"{'OOR': 0.5, 'CLOR': 0.8, 'CWOR': 0.8, 'SOR': 1.2, 'POR': 1.5}",Relation-aware discovery traversal costs.
+cost,discovery_edge_lambda,0.25,Weight on traversed edges in discovery cost.
+cost,recruitment_latency_lambda,0.35,Weight on latency in recruitment cost.
+cost,recruitment_privacy_lambda,0.75,Weight on privacy in recruitment cost.
+cost,selection_cost_lambda,0.1,Weight on candidate scoring cost.
+cost,net_utility_cost_lambda,0.25,Default interpretive utility cost penalty.
+cost,net_utility_privacy_lambda,0.15,Default interpretive utility privacy penalty.
+cost,net_utility_latency_lambda,0.1,Default interpretive utility latency penalty.
+cost,cost_epsilon,1.0,Denominator floor for cost-effectiveness ratios.
+budget_matched,policies,"['random_k', 'budgeted_opportunistic_k', 'siot_aware', 'siot_aware_trust_privacy']",Secondary budget-matched policy set.
+budget_matched,episodes,30,Budget-matched episodes per seed and scenario.
+budget_matched,timesteps,48,Budget-matched timesteps per episode.
+budget_matched,seeds,"[7, 11, 13, 17, 19]",Budget-matched deterministic seeds.
+discovery_mode_comparison,policies,"['siot_aware_exhaustive_discovery', 'siot_aware_bounded_discovery', 'siot_aware_trust_privacy_exhaustive_discovery', 'siot_aware_trust_privacy_bounded_discovery']",Exhaustive versus bounded SIoT-aware comparison policies.
+discovery_mode_comparison,episodes,20,Discovery-mode comparison episodes per seed and scenario.
+discovery_mode_comparison,timesteps,48,Discovery-mode comparison timesteps per episode.
+discovery_mode_comparison,seeds,"[7, 11, 13]",Discovery-mode comparison deterministic seeds.
+context_domain,place,"['home', 'office', 'transit', 'meeting_room', 'public_place']",Discrete context variable domain.
+context_domain,activity,"['focused_work', 'commuting', 'waiting', 'interacting', 'resting']",Discrete context variable domain.
+context_domain,env_load,"['low', 'medium', 'high']",Discrete context variable domain.
+context_domain,resource_state,"['nominal', 'degraded', 'sparse']",Discrete context variable domain.
+scenario_setting,nominal_ego_availability,0.9,Scenario ego observation availability.
+scenario_setting,nominal_ego_base_accuracy,0.7,Scenario ego base accuracy.
+scenario_setting,nominal_ego_variable_accuracy,"{'place': 0.72, 'activity': 0.68, 'env_load': 0.7, 'resource_state': 0.66}",Scenario ego variable accuracies.
+scenario_setting,nominal_external_degraded_fraction,0.05,Scenario external perturbation rate.
+scenario_setting,degraded_ego_ego_availability,0.58,Scenario ego observation availability.
+scenario_setting,degraded_ego_ego_base_accuracy,0.5,Scenario ego base accuracy.
+scenario_setting,degraded_ego_ego_variable_accuracy,"{'place': 0.52, 'activity': 0.46, 'env_load': 0.52, 'resource_state': 0.46}",Scenario ego variable accuracies.
+scenario_setting,degraded_ego_external_degraded_fraction,0.08,Scenario external perturbation rate.
+scenario_setting,ambiguous_local_context_ego_availability,0.82,Scenario ego observation availability.
+scenario_setting,ambiguous_local_context_ego_base_accuracy,0.58,Scenario ego base accuracy.
+scenario_setting,ambiguous_local_context_ego_variable_accuracy,"{'place': 0.42, 'activity': 0.46, 'env_load': 0.72, 'resource_state': 0.7}",Scenario ego variable accuracies.
+scenario_setting,ambiguous_local_context_external_degraded_fraction,0.06,Scenario external perturbation rate.
+scenario_setting,noisy_untrusted_external_ego_availability,0.82,Scenario ego observation availability.
+scenario_setting,noisy_untrusted_external_ego_base_accuracy,0.64,Scenario ego base accuracy.
+scenario_setting,noisy_untrusted_external_ego_variable_accuracy,"{'place': 0.66, 'activity': 0.62, 'env_load': 0.66, 'resource_state': 0.62}",Scenario ego variable accuracies.
+scenario_setting,noisy_untrusted_external_external_degraded_fraction,0.25,Scenario external perturbation rate.
+sensitivity,sensitivity_episodes,8,Compact sensitivity episodes per seed.
+sensitivity,sensitivity_timesteps,24,Compact sensitivity timesteps per episode.
+sensitivity,sensitivity_seeds,"[7, 11]",Sensitivity deterministic seeds.
+scalability,graph_sizes,"[60, 200, 800]",Source-node counts for scalability analysis.
+scalability,episodes,12,Scalability episodes per seed and scenario.
+scalability,timesteps,48,Scalability timesteps per episode.
+scalability,seeds,"[7, 11, 13]",Scalability deterministic seeds.

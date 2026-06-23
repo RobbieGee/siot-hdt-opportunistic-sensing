@@ -1,0 +1,5 @@
+The data and code supporting the findings of this study are publicly available in the accompanying GitHub repository:
+
+https://github.com/RobbieGee/siot-hdt-opportunistic-sensing.git
+
+The repository includes the synthetic simulator, processed synthetic outputs used to generate the tables and figures reported in the manuscript, metadata, and analysis scripts for reproducing the reported plots and summary statistics. No personal, sensitive, proprietary, or real-world human-subject data were used in this study.

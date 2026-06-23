@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this simulator, please cite the accompanying manuscript and this repository."
+title: "SIoT-HDT Opportunistic Sensing Simulator"
+type: software
+authors:
+  - family-names: Bacchiani
+    given-names: Lorenzo
+  - family-names: Melis
+    given-names: Andrea
+  - family-names: Presta
+    given-names: Roberta
+  - family-names: Anedda
+    given-names: Matteo
+  - family-names: Giusto
+    given-names: Daniele
+  - family-names: Girau
+    given-names: Roberto
+year: 2026
+abstract: "Synthetic simulator for evaluating SIoT-enabled opportunistic sensing and source recruitment policies for Human Digital Twin context estimation under partial observability."
+preferred-citation:
+  type: article
+  title: "SIoT-Enabled Opportunistic Sensing under Partial Observability: Evaluating Recruitment Policies for Human Digital Twin Context Estimation"
+  authors:
+    - family-names: Bacchiani
+      given-names: Lorenzo
+    - family-names: Melis
+      given-names: Andrea
+    - family-names: Presta
+      given-names: Roberta
+    - family-names: Anedda
+      given-names: Matteo
+    - family-names: Giusto
+      given-names: Daniele
+    - family-names: Girau
+      given-names: Roberto
+  year: 2026

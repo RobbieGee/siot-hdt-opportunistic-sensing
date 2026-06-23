@@ -1,0 +1,73 @@
+scenario,metric,policy_a,policy_a_label,policy_b,policy_b_label,mean_difference_a_minus_b,median_difference_a_minus_b,ci95_low,ci95_high,episodes_compared
+nominal,convergence_time,ego_only,Ego-only,opportunistic_all,Opportunistic all,4.90410781841391,4.426839385284918,4.618178702552894,5.192271923905017,250
+nominal,convergence_time,ego_only,Ego-only,siot_aware,SIoT-aware,1.7878883506737493,1.3021739130434784,1.565606777103215,2.0191923710541593,250
+nominal,convergence_time,ego_only,Ego-only,siot_aware_trust_privacy,Privacy-aware SIoT,1.5697000200980007,1.0514287390717598,1.3575686067462311,1.8010031815431593,250
+nominal,convergence_time,opportunistic_all,Opportunistic all,siot_aware,SIoT-aware,-3.116219467740161,-2.7293652638921184,-3.3007803082544456,-2.9201863635039684,250
+nominal,convergence_time,opportunistic_all,Opportunistic all,siot_aware_trust_privacy,Privacy-aware SIoT,-3.3344077983159095,-2.9354337102062074,-3.5250273449210385,-3.1415396687816313,250
+nominal,convergence_time,siot_aware,SIoT-aware,siot_aware_trust_privacy,Privacy-aware SIoT,-0.2181883305757484,0.0,-0.30340508017523565,-0.1315863648979615,250
+nominal,mean_variable_accuracy,ego_only,Ego-only,opportunistic_all,Opportunistic all,-0.37495833333333334,-0.375,-0.3800640625,-0.36982968749999995,250
+nominal,mean_variable_accuracy,ego_only,Ego-only,siot_aware,SIoT-aware,-0.10289583333333334,-0.09895833333333337,-0.10735520833333333,-0.09858072916666667,250
+nominal,mean_variable_accuracy,ego_only,Ego-only,siot_aware_trust_privacy,Privacy-aware SIoT,-0.08922916666666668,-0.08854166666666663,-0.09293802083333334,-0.08558281250000001,250
+nominal,mean_variable_accuracy,opportunistic_all,Opportunistic all,siot_aware,SIoT-aware,0.2720625,0.27604166666666663,0.26747864583333325,0.27641718750000005,250
+nominal,mean_variable_accuracy,opportunistic_all,Opportunistic all,siot_aware_trust_privacy,Privacy-aware SIoT,0.2857291666666667,0.28645833333333337,0.2813333333333334,0.29012604166666667,250
+nominal,mean_variable_accuracy,siot_aware,SIoT-aware,siot_aware_trust_privacy,Privacy-aware SIoT,0.013666666666666664,0.00520833333333337,0.01156145833333333,0.01602239583333333,250
+nominal,overall_context_accuracy,ego_only,Ego-only,opportunistic_all,Opportunistic all,-0.6649999999999999,-0.6666666666666667,-0.6759229166666666,-0.6529979166666666,250
+nominal,overall_context_accuracy,ego_only,Ego-only,siot_aware,SIoT-aware,-0.07974999999999999,-0.06250000000000003,-0.08583541666666666,-0.07349375,250
+nominal,overall_context_accuracy,ego_only,Ego-only,siot_aware_trust_privacy,Privacy-aware SIoT,-0.06341666666666668,-0.0625,-0.06850208333333334,-0.05799791666666666,250
+nominal,overall_context_accuracy,opportunistic_all,Opportunistic all,siot_aware,SIoT-aware,0.58525,0.5833333333333334,0.5747458333333333,0.5960020833333333,250
+nominal,overall_context_accuracy,opportunistic_all,Opportunistic all,siot_aware_trust_privacy,Privacy-aware SIoT,0.6015833333333334,0.6041666666666667,0.5898270833333332,0.6133354166666666,250
+nominal,overall_context_accuracy,siot_aware,SIoT-aware,siot_aware_trust_privacy,Privacy-aware SIoT,0.01633333333333333,0.0,0.013166666666666667,0.019585416666666664,250
+degraded_ego,convergence_time,ego_only,Ego-only,opportunistic_all,Opportunistic all,24.30332278908611,16.532951094916584,21.971079390063085,26.679401446521958,250
+degraded_ego,convergence_time,ego_only,Ego-only,siot_aware,SIoT-aware,19.616101520272256,12.203631907308377,17.511144960045968,22.048341587459323,250
+degraded_ego,convergence_time,ego_only,Ego-only,siot_aware_trust_privacy,Privacy-aware SIoT,18.96096573296297,11.61387861169838,16.77690512491574,21.20921670204527,250
+degraded_ego,convergence_time,opportunistic_all,Opportunistic all,siot_aware,SIoT-aware,-4.687221268813855,-3.6701245445937056,-5.214308567889893,-4.22953532940158,250
+degraded_ego,convergence_time,opportunistic_all,Opportunistic all,siot_aware_trust_privacy,Privacy-aware SIoT,-5.342357056123143,-4.023159584980236,-6.051392737831526,-4.755940398799414,250
+degraded_ego,convergence_time,siot_aware,SIoT-aware,siot_aware_trust_privacy,Privacy-aware SIoT,-0.6551357873092878,0.0,-1.0868067699477397,-0.32847358157120005,250
+degraded_ego,mean_variable_accuracy,ego_only,Ego-only,opportunistic_all,Opportunistic all,-0.5950416666666667,-0.59375,-0.5998541666666667,-0.5901666666666667,250
+degraded_ego,mean_variable_accuracy,ego_only,Ego-only,siot_aware,SIoT-aware,-0.2753958333333334,-0.27604166666666663,-0.2825854166666667,-0.2685411458333333,250
+degraded_ego,mean_variable_accuracy,ego_only,Ego-only,siot_aware_trust_privacy,Privacy-aware SIoT,-0.25841666666666663,-0.2604166666666667,-0.26450104166666666,-0.25135312500000007,250
+degraded_ego,mean_variable_accuracy,opportunistic_all,Opportunistic all,siot_aware,SIoT-aware,0.31964583333333335,0.31770833333333337,0.31279114583333334,0.3260223958333333,250
+degraded_ego,mean_variable_accuracy,opportunistic_all,Opportunistic all,siot_aware_trust_privacy,Privacy-aware SIoT,0.336625,0.33072916666666663,0.33006145833333334,0.3432302083333333,250
+degraded_ego,mean_variable_accuracy,siot_aware,SIoT-aware,siot_aware_trust_privacy,Privacy-aware SIoT,0.016979166666666663,0.01041666666666663,0.014374479166666669,0.019813541666666667,250
+degraded_ego,overall_context_accuracy,ego_only,Ego-only,opportunistic_all,Opportunistic all,-0.75325,-0.75,-0.76375,-0.7425,250
+degraded_ego,overall_context_accuracy,ego_only,Ego-only,siot_aware,SIoT-aware,-0.1328333333333333,-0.125,-0.14116666666666666,-0.1245,250
+degraded_ego,overall_context_accuracy,ego_only,Ego-only,siot_aware_trust_privacy,Privacy-aware SIoT,-0.11583333333333333,-0.125,-0.12350416666666666,-0.10874791666666667,250
+degraded_ego,overall_context_accuracy,opportunistic_all,Opportunistic all,siot_aware,SIoT-aware,0.6204166666666666,0.625,0.60925,0.6325020833333332,250
+degraded_ego,overall_context_accuracy,opportunistic_all,Opportunistic all,siot_aware_trust_privacy,Privacy-aware SIoT,0.6374166666666667,0.6458333333333334,0.6254145833333334,0.64875,250
+degraded_ego,overall_context_accuracy,siot_aware,SIoT-aware,siot_aware_trust_privacy,Privacy-aware SIoT,0.017,0.0,0.01358125,0.02058333333333333,250
+ambiguous_local_context,convergence_time,ego_only,Ego-only,opportunistic_all,Opportunistic all,11.501701184471193,8.114631514030219,10.04816038380571,12.99512387686565,250
+ambiguous_local_context,convergence_time,ego_only,Ego-only,siot_aware,SIoT-aware,6.680286172809083,3.6371834625323,5.436089547179997,8.052550651565262,250
+ambiguous_local_context,convergence_time,ego_only,Ego-only,siot_aware_trust_privacy,Privacy-aware SIoT,6.112034657612559,3.0238095238095237,4.901214064919394,7.374690676552594,250
+ambiguous_local_context,convergence_time,opportunistic_all,Opportunistic all,siot_aware,SIoT-aware,-4.821415011662108,-4.183668076109936,-5.212275336054464,-4.46266841259426,250
+ambiguous_local_context,convergence_time,opportunistic_all,Opportunistic all,siot_aware_trust_privacy,Privacy-aware SIoT,-5.3896665268586315,-4.468221494817239,-5.944853829237026,-4.8883464614107455,250
+ambiguous_local_context,convergence_time,siot_aware,SIoT-aware,siot_aware_trust_privacy,Privacy-aware SIoT,-0.5682515151965241,0.0,-0.891726495336719,-0.31677831600623224,250
+ambiguous_local_context,mean_variable_accuracy,ego_only,Ego-only,opportunistic_all,Opportunistic all,-0.465,-0.46875,-0.470584375,-0.4594786458333333,250
+ambiguous_local_context,mean_variable_accuracy,ego_only,Ego-only,siot_aware,SIoT-aware,-0.138625,-0.13541666666666669,-0.14412604166666668,-0.1333109375,250
+ambiguous_local_context,mean_variable_accuracy,ego_only,Ego-only,siot_aware_trust_privacy,Privacy-aware SIoT,-0.12339583333333334,-0.12499999999999994,-0.12812604166666666,-0.11885416666666669,250
+ambiguous_local_context,mean_variable_accuracy,opportunistic_all,Opportunistic all,siot_aware,SIoT-aware,0.326375,0.32552083333333337,0.32164479166666665,0.33125052083333334,250
+ambiguous_local_context,mean_variable_accuracy,opportunistic_all,Opportunistic all,siot_aware_trust_privacy,Privacy-aware SIoT,0.3416041666666667,0.34375,0.3364791666666666,0.3462916666666666,250
+ambiguous_local_context,mean_variable_accuracy,siot_aware,SIoT-aware,siot_aware_trust_privacy,Privacy-aware SIoT,0.015229166666666665,0.01041666666666663,0.012854166666666668,0.017792187500000004,250
+ambiguous_local_context,overall_context_accuracy,ego_only,Ego-only,opportunistic_all,Opportunistic all,-0.6906666666666667,-0.7083333333333333,-0.7041729166666666,-0.67574375,250
+ambiguous_local_context,overall_context_accuracy,ego_only,Ego-only,siot_aware,SIoT-aware,-0.084,-0.08333333333333334,-0.09000208333333333,-0.078,250
+ambiguous_local_context,overall_context_accuracy,ego_only,Ego-only,siot_aware_trust_privacy,Privacy-aware SIoT,-0.06925,-0.0625,-0.07441666666666666,-0.064,250
+ambiguous_local_context,overall_context_accuracy,opportunistic_all,Opportunistic all,siot_aware,SIoT-aware,0.6066666666666667,0.625,0.5934145833333334,0.6187520833333333,250
+ambiguous_local_context,overall_context_accuracy,opportunistic_all,Opportunistic all,siot_aware_trust_privacy,Privacy-aware SIoT,0.6214166666666667,0.625,0.6079979166666667,0.6354166666666666,250
+ambiguous_local_context,overall_context_accuracy,siot_aware,SIoT-aware,siot_aware_trust_privacy,Privacy-aware SIoT,0.01475,0.0,0.01175,0.017504166666666664,250
+noisy_untrusted_external,convergence_time,ego_only,Ego-only,opportunistic_all,Opportunistic all,5.864629951258689,4.391011443337025,5.144076512934174,6.685718439170707,250
+noisy_untrusted_external,convergence_time,ego_only,Ego-only,siot_aware,SIoT-aware,0.7260988550246845,0.0,-0.070694709112023,1.5287394222768487,250
+noisy_untrusted_external,convergence_time,ego_only,Ego-only,siot_aware_trust_privacy,Privacy-aware SIoT,0.3629530563551968,0.0,-0.37963874719412827,1.1122219224941305,250
+noisy_untrusted_external,convergence_time,opportunistic_all,Opportunistic all,siot_aware,SIoT-aware,-5.138531096234004,-3.967375886524823,-5.846104320933431,-4.463684002195869,250
+noisy_untrusted_external,convergence_time,opportunistic_all,Opportunistic all,siot_aware_trust_privacy,Privacy-aware SIoT,-5.501676894903492,-4.01971061971062,-6.419864849544621,-4.741899726986619,250
+noisy_untrusted_external,convergence_time,siot_aware,SIoT-aware,siot_aware_trust_privacy,Privacy-aware SIoT,-0.36314579866948754,0.0,-0.8013905508000527,-0.018466467404039705,250
+noisy_untrusted_external,mean_variable_accuracy,ego_only,Ego-only,opportunistic_all,Opportunistic all,-0.24104166666666668,-0.23958333333333337,-0.24558437500000002,-0.23662083333333334,250
+noisy_untrusted_external,mean_variable_accuracy,ego_only,Ego-only,siot_aware,SIoT-aware,-0.04435416666666667,-0.04166666666666663,-0.04768802083333334,-0.04112447916666667,250
+noisy_untrusted_external,mean_variable_accuracy,ego_only,Ego-only,siot_aware_trust_privacy,Privacy-aware SIoT,-0.03941666666666666,-0.03645833333333337,-0.04258333333333333,-0.0365,250
+noisy_untrusted_external,mean_variable_accuracy,opportunistic_all,Opportunistic all,siot_aware,SIoT-aware,0.19668749999999996,0.19270833333333337,0.19231041666666668,0.200959375,250
+noisy_untrusted_external,mean_variable_accuracy,opportunistic_all,Opportunistic all,siot_aware_trust_privacy,Privacy-aware SIoT,0.201625,0.203125,0.19704114583333335,0.2059375,250
+noisy_untrusted_external,mean_variable_accuracy,siot_aware,SIoT-aware,siot_aware_trust_privacy,Privacy-aware SIoT,0.0049375000000000035,0.0,0.0036036458333333354,0.006354166666666668,250
+noisy_untrusted_external,overall_context_accuracy,ego_only,Ego-only,opportunistic_all,Opportunistic all,-0.21933333333333332,-0.20833333333333337,-0.228,-0.21057916666666668,250
+noisy_untrusted_external,overall_context_accuracy,ego_only,Ego-only,siot_aware,SIoT-aware,-0.014416666666666668,-0.02083333333333333,-0.018,-0.010666666666666668,250
+noisy_untrusted_external,overall_context_accuracy,ego_only,Ego-only,siot_aware_trust_privacy,Privacy-aware SIoT,-0.011666666666666667,0.0,-0.015085416666666667,-0.008583333333333333,250
+noisy_untrusted_external,overall_context_accuracy,opportunistic_all,Opportunistic all,siot_aware,SIoT-aware,0.2049166666666667,0.1875,0.19733124999999999,0.21333333333333332,250
+noisy_untrusted_external,overall_context_accuracy,opportunistic_all,Opportunistic all,siot_aware_trust_privacy,Privacy-aware SIoT,0.20766666666666667,0.19791666666666669,0.19974791666666666,0.21666666666666665,250
+noisy_untrusted_external,overall_context_accuracy,siot_aware,SIoT-aware,siot_aware_trust_privacy,Privacy-aware SIoT,0.00275,0.0,0.0010833333333333328,0.004666666666666666,250

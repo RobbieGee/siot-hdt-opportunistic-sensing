@@ -1,0 +1,193 @@
+scenario,policy,policy_label,discovery_mode,lambda_cost,lambda_privacy,lambda_latency,OCA,normalized_total_operational_cost,normalized_privacy_cost,normalized_latency_proxy,net_utility
+ambiguous_local_context,ego_only,Ego-only,exhaustive_hop,0.0,0.0,0.0,0.05233333333333333,0.0,0.0,0.0,0.05233333333333333
+ambiguous_local_context,opportunistic_all,Opportunistic all,exhaustive_hop,0.0,0.0,0.0,0.743,1.0,1.0,1.0,0.743
+ambiguous_local_context,siot_aware,SIoT-aware,bounded_relationship_guided,0.0,0.0,0.0,0.1363333333333333,0.23750843748109296,0.125177143046382,0.4569279732218274,0.1363333333333333
+ambiguous_local_context,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.0,0.0,0.0,0.12158333333333333,0.23572715356544435,0.11427598156804455,0.4411214563376948,0.12158333333333333
+ambiguous_local_context,ego_only,Ego-only,exhaustive_hop,0.0,0.0,0.1,0.05233333333333333,0.0,0.0,0.0,0.05233333333333333
+ambiguous_local_context,opportunistic_all,Opportunistic all,exhaustive_hop,0.0,0.0,0.1,0.743,1.0,1.0,1.0,0.643
+ambiguous_local_context,siot_aware,SIoT-aware,bounded_relationship_guided,0.0,0.0,0.1,0.1363333333333333,0.23750843748109296,0.125177143046382,0.4569279732218274,0.09064053601115057
+ambiguous_local_context,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.0,0.0,0.1,0.12158333333333333,0.23572715356544435,0.11427598156804455,0.4411214563376948,0.07747118769956385
+ambiguous_local_context,ego_only,Ego-only,exhaustive_hop,0.0,0.15,0.0,0.05233333333333333,0.0,0.0,0.0,0.05233333333333333
+ambiguous_local_context,opportunistic_all,Opportunistic all,exhaustive_hop,0.0,0.15,0.0,0.743,1.0,1.0,1.0,0.593
+ambiguous_local_context,siot_aware,SIoT-aware,bounded_relationship_guided,0.0,0.15,0.0,0.1363333333333333,0.23750843748109296,0.125177143046382,0.4569279732218274,0.11755676187637601
+ambiguous_local_context,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.0,0.15,0.0,0.12158333333333333,0.23572715356544435,0.11427598156804455,0.4411214563376948,0.10444193609812666
+ambiguous_local_context,ego_only,Ego-only,exhaustive_hop,0.0,0.15,0.1,0.05233333333333333,0.0,0.0,0.0,0.05233333333333333
+ambiguous_local_context,opportunistic_all,Opportunistic all,exhaustive_hop,0.0,0.15,0.1,0.743,1.0,1.0,1.0,0.493
+ambiguous_local_context,siot_aware,SIoT-aware,bounded_relationship_guided,0.0,0.15,0.1,0.1363333333333333,0.23750843748109296,0.125177143046382,0.4569279732218274,0.07186396455419328
+ambiguous_local_context,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.0,0.15,0.1,0.12158333333333333,0.23572715356544435,0.11427598156804455,0.4411214563376948,0.06032979046435718
+ambiguous_local_context,ego_only,Ego-only,exhaustive_hop,0.25,0.0,0.0,0.05233333333333333,0.0,0.0,0.0,0.05233333333333333
+ambiguous_local_context,opportunistic_all,Opportunistic all,exhaustive_hop,0.25,0.0,0.0,0.743,1.0,1.0,1.0,0.493
+ambiguous_local_context,siot_aware,SIoT-aware,bounded_relationship_guided,0.25,0.0,0.0,0.1363333333333333,0.23750843748109296,0.125177143046382,0.4569279732218274,0.07695622396306007
+ambiguous_local_context,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.25,0.0,0.0,0.12158333333333333,0.23572715356544435,0.11427598156804455,0.4411214563376948,0.06265154494197225
+ambiguous_local_context,ego_only,Ego-only,exhaustive_hop,0.25,0.0,0.1,0.05233333333333333,0.0,0.0,0.0,0.05233333333333333
+ambiguous_local_context,opportunistic_all,Opportunistic all,exhaustive_hop,0.25,0.0,0.1,0.743,1.0,1.0,1.0,0.393
+ambiguous_local_context,siot_aware,SIoT-aware,bounded_relationship_guided,0.25,0.0,0.1,0.1363333333333333,0.23750843748109296,0.125177143046382,0.4569279732218274,0.03126342664087733
+ambiguous_local_context,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.25,0.0,0.1,0.12158333333333333,0.23572715356544435,0.11427598156804455,0.4411214563376948,0.018539399308202774
+ambiguous_local_context,ego_only,Ego-only,exhaustive_hop,0.25,0.15,0.0,0.05233333333333333,0.0,0.0,0.0,0.05233333333333333
+ambiguous_local_context,opportunistic_all,Opportunistic all,exhaustive_hop,0.25,0.15,0.0,0.743,1.0,1.0,1.0,0.34299999999999997
+ambiguous_local_context,siot_aware,SIoT-aware,bounded_relationship_guided,0.25,0.15,0.0,0.1363333333333333,0.23750843748109296,0.125177143046382,0.4569279732218274,0.05817965250610277
+ambiguous_local_context,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.25,0.15,0.0,0.12158333333333333,0.23572715356544435,0.11427598156804455,0.4411214563376948,0.04551014770676557
+ambiguous_local_context,ego_only,Ego-only,exhaustive_hop,0.25,0.15,0.1,0.05233333333333333,0.0,0.0,0.0,0.05233333333333333
+ambiguous_local_context,opportunistic_all,Opportunistic all,exhaustive_hop,0.25,0.15,0.1,0.743,1.0,1.0,1.0,0.24299999999999997
+ambiguous_local_context,siot_aware,SIoT-aware,bounded_relationship_guided,0.25,0.15,0.1,0.1363333333333333,0.23750843748109296,0.125177143046382,0.4569279732218274,0.01248685518392003
+ambiguous_local_context,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.25,0.15,0.1,0.12158333333333333,0.23572715356544435,0.11427598156804455,0.4411214563376948,0.0013980020729960907
+ambiguous_local_context,ego_only,Ego-only,exhaustive_hop,0.5,0.0,0.0,0.05233333333333333,0.0,0.0,0.0,0.05233333333333333
+ambiguous_local_context,opportunistic_all,Opportunistic all,exhaustive_hop,0.5,0.0,0.0,0.743,1.0,1.0,1.0,0.243
+ambiguous_local_context,siot_aware,SIoT-aware,bounded_relationship_guided,0.5,0.0,0.0,0.1363333333333333,0.23750843748109296,0.125177143046382,0.4569279732218274,0.017579114592786826
+ambiguous_local_context,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.5,0.0,0.0,0.12158333333333333,0.23572715356544435,0.11427598156804455,0.4411214563376948,0.0037197565506111585
+ambiguous_local_context,ego_only,Ego-only,exhaustive_hop,0.5,0.0,0.1,0.05233333333333333,0.0,0.0,0.0,0.05233333333333333
+ambiguous_local_context,opportunistic_all,Opportunistic all,exhaustive_hop,0.5,0.0,0.1,0.743,1.0,1.0,1.0,0.143
+ambiguous_local_context,siot_aware,SIoT-aware,bounded_relationship_guided,0.5,0.0,0.1,0.1363333333333333,0.23750843748109296,0.125177143046382,0.4569279732218274,-0.028113682729395913
+ambiguous_local_context,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.5,0.0,0.1,0.12158333333333333,0.23572715356544435,0.11427598156804455,0.4411214563376948,-0.04039238908315832
+ambiguous_local_context,ego_only,Ego-only,exhaustive_hop,0.5,0.15,0.0,0.05233333333333333,0.0,0.0,0.0,0.05233333333333333
+ambiguous_local_context,opportunistic_all,Opportunistic all,exhaustive_hop,0.5,0.15,0.0,0.743,1.0,1.0,1.0,0.093
+ambiguous_local_context,siot_aware,SIoT-aware,bounded_relationship_guided,0.5,0.15,0.0,0.1363333333333333,0.23750843748109296,0.125177143046382,0.4569279732218274,-0.0011974568641704743
+ambiguous_local_context,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.5,0.15,0.0,0.12158333333333333,0.23572715356544435,0.11427598156804455,0.4411214563376948,-0.013421640684595525
+ambiguous_local_context,ego_only,Ego-only,exhaustive_hop,0.5,0.15,0.1,0.05233333333333333,0.0,0.0,0.0,0.05233333333333333
+ambiguous_local_context,opportunistic_all,Opportunistic all,exhaustive_hop,0.5,0.15,0.1,0.743,1.0,1.0,1.0,-0.007000000000000006
+ambiguous_local_context,siot_aware,SIoT-aware,bounded_relationship_guided,0.5,0.15,0.1,0.1363333333333333,0.23750843748109296,0.125177143046382,0.4569279732218274,-0.04689025418635322
+ambiguous_local_context,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.5,0.15,0.1,0.12158333333333333,0.23572715356544435,0.11427598156804455,0.4411214563376948,-0.057533786318365004
+degraded_ego,ego_only,Ego-only,exhaustive_hop,0.0,0.0,0.0,0.020666666666666667,0.0,0.0,0.0,0.020666666666666667
+degraded_ego,opportunistic_all,Opportunistic all,exhaustive_hop,0.0,0.0,0.0,0.7739166666666666,1.0,1.0,1.0,0.7739166666666666
+degraded_ego,siot_aware,SIoT-aware,bounded_relationship_guided,0.0,0.0,0.0,0.1535,0.24603180109676018,0.12963261603379203,0.4754087173765101,0.1535
+degraded_ego,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.0,0.0,0.0,0.1365,0.24456997413413736,0.1235991814128741,0.464733311953432,0.1365
+degraded_ego,ego_only,Ego-only,exhaustive_hop,0.0,0.0,0.1,0.020666666666666667,0.0,0.0,0.0,0.020666666666666667
+degraded_ego,opportunistic_all,Opportunistic all,exhaustive_hop,0.0,0.0,0.1,0.7739166666666666,1.0,1.0,1.0,0.6739166666666666
+degraded_ego,siot_aware,SIoT-aware,bounded_relationship_guided,0.0,0.0,0.1,0.1535,0.24603180109676018,0.12963261603379203,0.4754087173765101,0.10595912826234899
+degraded_ego,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.0,0.0,0.1,0.1365,0.24456997413413736,0.1235991814128741,0.464733311953432,0.09002666880465682
+degraded_ego,ego_only,Ego-only,exhaustive_hop,0.0,0.15,0.0,0.020666666666666667,0.0,0.0,0.0,0.020666666666666667
+degraded_ego,opportunistic_all,Opportunistic all,exhaustive_hop,0.0,0.15,0.0,0.7739166666666666,1.0,1.0,1.0,0.6239166666666666
+degraded_ego,siot_aware,SIoT-aware,bounded_relationship_guided,0.0,0.15,0.0,0.1535,0.24603180109676018,0.12963261603379203,0.4754087173765101,0.1340551075949312
+degraded_ego,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.0,0.15,0.0,0.1365,0.24456997413413736,0.1235991814128741,0.464733311953432,0.11796012278806889
+degraded_ego,ego_only,Ego-only,exhaustive_hop,0.0,0.15,0.1,0.020666666666666667,0.0,0.0,0.0,0.020666666666666667
+degraded_ego,opportunistic_all,Opportunistic all,exhaustive_hop,0.0,0.15,0.1,0.7739166666666666,1.0,1.0,1.0,0.5239166666666666
+degraded_ego,siot_aware,SIoT-aware,bounded_relationship_guided,0.0,0.15,0.1,0.1535,0.24603180109676018,0.12963261603379203,0.4754087173765101,0.08651423585728019
+degraded_ego,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.0,0.15,0.1,0.1365,0.24456997413413736,0.1235991814128741,0.464733311953432,0.0714867915927257
+degraded_ego,ego_only,Ego-only,exhaustive_hop,0.25,0.0,0.0,0.020666666666666667,0.0,0.0,0.0,0.020666666666666667
+degraded_ego,opportunistic_all,Opportunistic all,exhaustive_hop,0.25,0.0,0.0,0.7739166666666666,1.0,1.0,1.0,0.5239166666666666
+degraded_ego,siot_aware,SIoT-aware,bounded_relationship_guided,0.25,0.0,0.0,0.1535,0.24603180109676018,0.12963261603379203,0.4754087173765101,0.09199204972580996
+degraded_ego,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.25,0.0,0.0,0.1365,0.24456997413413736,0.1235991814128741,0.464733311953432,0.07535750646646566
+degraded_ego,ego_only,Ego-only,exhaustive_hop,0.25,0.0,0.1,0.020666666666666667,0.0,0.0,0.0,0.020666666666666667
+degraded_ego,opportunistic_all,Opportunistic all,exhaustive_hop,0.25,0.0,0.1,0.7739166666666666,1.0,1.0,1.0,0.4239166666666666
+degraded_ego,siot_aware,SIoT-aware,bounded_relationship_guided,0.25,0.0,0.1,0.1535,0.24603180109676018,0.12963261603379203,0.4754087173765101,0.04445117798815895
+degraded_ego,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.25,0.0,0.1,0.1365,0.24456997413413736,0.1235991814128741,0.464733311953432,0.028884175271122463
+degraded_ego,ego_only,Ego-only,exhaustive_hop,0.25,0.15,0.0,0.020666666666666667,0.0,0.0,0.0,0.020666666666666667
+degraded_ego,opportunistic_all,Opportunistic all,exhaustive_hop,0.25,0.15,0.0,0.7739166666666666,1.0,1.0,1.0,0.37391666666666656
+degraded_ego,siot_aware,SIoT-aware,bounded_relationship_guided,0.25,0.15,0.0,0.1535,0.24603180109676018,0.12963261603379203,0.4754087173765101,0.07254715732074116
+degraded_ego,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.25,0.15,0.0,0.1365,0.24456997413413736,0.1235991814128741,0.464733311953432,0.05681762925453455
+degraded_ego,ego_only,Ego-only,exhaustive_hop,0.25,0.15,0.1,0.020666666666666667,0.0,0.0,0.0,0.020666666666666667
+degraded_ego,opportunistic_all,Opportunistic all,exhaustive_hop,0.25,0.15,0.1,0.7739166666666666,1.0,1.0,1.0,0.2739166666666666
+degraded_ego,siot_aware,SIoT-aware,bounded_relationship_guided,0.25,0.15,0.1,0.1535,0.24603180109676018,0.12963261603379203,0.4754087173765101,0.02500628558309015
+degraded_ego,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.25,0.15,0.1,0.1365,0.24456997413413736,0.1235991814128741,0.464733311953432,0.010344298059191348
+degraded_ego,ego_only,Ego-only,exhaustive_hop,0.5,0.0,0.0,0.020666666666666667,0.0,0.0,0.0,0.020666666666666667
+degraded_ego,opportunistic_all,Opportunistic all,exhaustive_hop,0.5,0.0,0.0,0.7739166666666666,1.0,1.0,1.0,0.2739166666666666
+degraded_ego,siot_aware,SIoT-aware,bounded_relationship_guided,0.5,0.0,0.0,0.1535,0.24603180109676018,0.12963261603379203,0.4754087173765101,0.03048409945161991
+degraded_ego,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.5,0.0,0.0,0.1365,0.24456997413413736,0.1235991814128741,0.464733311953432,0.014215012932931329
+degraded_ego,ego_only,Ego-only,exhaustive_hop,0.5,0.0,0.1,0.020666666666666667,0.0,0.0,0.0,0.020666666666666667
+degraded_ego,opportunistic_all,Opportunistic all,exhaustive_hop,0.5,0.0,0.1,0.7739166666666666,1.0,1.0,1.0,0.17391666666666658
+degraded_ego,siot_aware,SIoT-aware,bounded_relationship_guided,0.5,0.0,0.1,0.1535,0.24603180109676018,0.12963261603379203,0.4754087173765101,-0.0170567722860311
+degraded_ego,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.5,0.0,0.1,0.1365,0.24456997413413736,0.1235991814128741,0.464733311953432,-0.03225831826241187
+degraded_ego,ego_only,Ego-only,exhaustive_hop,0.5,0.15,0.0,0.020666666666666667,0.0,0.0,0.0,0.020666666666666667
+degraded_ego,opportunistic_all,Opportunistic all,exhaustive_hop,0.5,0.15,0.0,0.7739166666666666,1.0,1.0,1.0,0.12391666666666659
+degraded_ego,siot_aware,SIoT-aware,bounded_relationship_guided,0.5,0.15,0.0,0.1535,0.24603180109676018,0.12963261603379203,0.4754087173765101,0.011039207046551106
+degraded_ego,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.5,0.15,0.0,0.1365,0.24456997413413736,0.1235991814128741,0.464733311953432,-0.004324864278999786
+degraded_ego,ego_only,Ego-only,exhaustive_hop,0.5,0.15,0.1,0.020666666666666667,0.0,0.0,0.0,0.020666666666666667
+degraded_ego,opportunistic_all,Opportunistic all,exhaustive_hop,0.5,0.15,0.1,0.7739166666666666,1.0,1.0,1.0,0.023916666666666586
+degraded_ego,siot_aware,SIoT-aware,bounded_relationship_guided,0.5,0.15,0.1,0.1535,0.24603180109676018,0.12963261603379203,0.4754087173765101,-0.0365016646910999
+degraded_ego,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.5,0.15,0.1,0.1365,0.24456997413413736,0.1235991814128741,0.464733311953432,-0.050798195474342986
+noisy_untrusted_external,ego_only,Ego-only,exhaustive_hop,0.0,0.0,0.0,0.08341666666666667,0.0,0.0,0.0,0.08341666666666667
+noisy_untrusted_external,opportunistic_all,Opportunistic all,exhaustive_hop,0.0,0.0,0.0,0.30275,1.0,1.0,1.0,0.30275
+noisy_untrusted_external,siot_aware,SIoT-aware,bounded_relationship_guided,0.0,0.0,0.0,0.09783333333333334,0.2285018831286446,0.08493584752310113,0.4279594456734815,0.09783333333333334
+noisy_untrusted_external,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.0,0.0,0.0,0.09508333333333334,0.22473766774019344,0.05959918864238822,0.40540629751573115,0.09508333333333334
+noisy_untrusted_external,ego_only,Ego-only,exhaustive_hop,0.0,0.0,0.1,0.08341666666666667,0.0,0.0,0.0,0.08341666666666667
+noisy_untrusted_external,opportunistic_all,Opportunistic all,exhaustive_hop,0.0,0.0,0.1,0.30275,1.0,1.0,1.0,0.20275
+noisy_untrusted_external,siot_aware,SIoT-aware,bounded_relationship_guided,0.0,0.0,0.1,0.09783333333333334,0.2285018831286446,0.08493584752310113,0.4279594456734815,0.05503738876598519
+noisy_untrusted_external,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.0,0.0,0.1,0.09508333333333334,0.22473766774019344,0.05959918864238822,0.40540629751573115,0.05454270358176022
+noisy_untrusted_external,ego_only,Ego-only,exhaustive_hop,0.0,0.15,0.0,0.08341666666666667,0.0,0.0,0.0,0.08341666666666667
+noisy_untrusted_external,opportunistic_all,Opportunistic all,exhaustive_hop,0.0,0.15,0.0,0.30275,1.0,1.0,1.0,0.15275000000000002
+noisy_untrusted_external,siot_aware,SIoT-aware,bounded_relationship_guided,0.0,0.15,0.0,0.09783333333333334,0.2285018831286446,0.08493584752310113,0.4279594456734815,0.08509295620486818
+noisy_untrusted_external,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.0,0.15,0.0,0.09508333333333334,0.22473766774019344,0.05959918864238822,0.40540629751573115,0.08614345503697511
+noisy_untrusted_external,ego_only,Ego-only,exhaustive_hop,0.0,0.15,0.1,0.08341666666666667,0.0,0.0,0.0,0.08341666666666667
+noisy_untrusted_external,opportunistic_all,Opportunistic all,exhaustive_hop,0.0,0.15,0.1,0.30275,1.0,1.0,1.0,0.05275000000000002
+noisy_untrusted_external,siot_aware,SIoT-aware,bounded_relationship_guided,0.0,0.15,0.1,0.09783333333333334,0.2285018831286446,0.08493584752310113,0.4279594456734815,0.042297011637520025
+noisy_untrusted_external,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.0,0.15,0.1,0.09508333333333334,0.22473766774019344,0.05959918864238822,0.40540629751573115,0.04560282528540199
+noisy_untrusted_external,ego_only,Ego-only,exhaustive_hop,0.25,0.0,0.0,0.08341666666666667,0.0,0.0,0.0,0.08341666666666667
+noisy_untrusted_external,opportunistic_all,Opportunistic all,exhaustive_hop,0.25,0.0,0.0,0.30275,1.0,1.0,1.0,0.05275000000000002
+noisy_untrusted_external,siot_aware,SIoT-aware,bounded_relationship_guided,0.25,0.0,0.0,0.09783333333333334,0.2285018831286446,0.08493584752310113,0.4279594456734815,0.04070786255117219
+noisy_untrusted_external,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.25,0.0,0.0,0.09508333333333334,0.22473766774019344,0.05959918864238822,0.40540629751573115,0.03889891639828498
+noisy_untrusted_external,ego_only,Ego-only,exhaustive_hop,0.25,0.0,0.1,0.08341666666666667,0.0,0.0,0.0,0.08341666666666667
+noisy_untrusted_external,opportunistic_all,Opportunistic all,exhaustive_hop,0.25,0.0,0.1,0.30275,1.0,1.0,1.0,-0.047249999999999986
+noisy_untrusted_external,siot_aware,SIoT-aware,bounded_relationship_guided,0.25,0.0,0.1,0.09783333333333334,0.2285018831286446,0.08493584752310113,0.4279594456734815,-0.0020880820161759614
+noisy_untrusted_external,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.25,0.0,0.1,0.09508333333333334,0.22473766774019344,0.05959918864238822,0.40540629751573115,-0.0016417133532881378
+noisy_untrusted_external,ego_only,Ego-only,exhaustive_hop,0.25,0.15,0.0,0.08341666666666667,0.0,0.0,0.0,0.08341666666666667
+noisy_untrusted_external,opportunistic_all,Opportunistic all,exhaustive_hop,0.25,0.15,0.0,0.30275,1.0,1.0,1.0,-0.09724999999999998
+noisy_untrusted_external,siot_aware,SIoT-aware,bounded_relationship_guided,0.25,0.15,0.0,0.09783333333333334,0.2285018831286446,0.08493584752310113,0.4279594456734815,0.027967485422707022
+noisy_untrusted_external,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.25,0.15,0.0,0.09508333333333334,0.22473766774019344,0.05959918864238822,0.40540629751573115,0.029959038101926745
+noisy_untrusted_external,ego_only,Ego-only,exhaustive_hop,0.25,0.15,0.1,0.08341666666666667,0.0,0.0,0.0,0.08341666666666667
+noisy_untrusted_external,opportunistic_all,Opportunistic all,exhaustive_hop,0.25,0.15,0.1,0.30275,1.0,1.0,1.0,-0.19724999999999998
+noisy_untrusted_external,siot_aware,SIoT-aware,bounded_relationship_guided,0.25,0.15,0.1,0.09783333333333334,0.2285018831286446,0.08493584752310113,0.4279594456734815,-0.014828459144641128
+noisy_untrusted_external,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.25,0.15,0.1,0.09508333333333334,0.22473766774019344,0.05959918864238822,0.40540629751573115,-0.010581591649646373
+noisy_untrusted_external,ego_only,Ego-only,exhaustive_hop,0.5,0.0,0.0,0.08341666666666667,0.0,0.0,0.0,0.08341666666666667
+noisy_untrusted_external,opportunistic_all,Opportunistic all,exhaustive_hop,0.5,0.0,0.0,0.30275,1.0,1.0,1.0,-0.19724999999999998
+noisy_untrusted_external,siot_aware,SIoT-aware,bounded_relationship_guided,0.5,0.0,0.0,0.09783333333333334,0.2285018831286446,0.08493584752310113,0.4279594456734815,-0.016417608230988964
+noisy_untrusted_external,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.5,0.0,0.0,0.09508333333333334,0.22473766774019344,0.05959918864238822,0.40540629751573115,-0.01728550053676338
+noisy_untrusted_external,ego_only,Ego-only,exhaustive_hop,0.5,0.0,0.1,0.08341666666666667,0.0,0.0,0.0,0.08341666666666667
+noisy_untrusted_external,opportunistic_all,Opportunistic all,exhaustive_hop,0.5,0.0,0.1,0.30275,1.0,1.0,1.0,-0.29725
+noisy_untrusted_external,siot_aware,SIoT-aware,bounded_relationship_guided,0.5,0.0,0.1,0.09783333333333334,0.2285018831286446,0.08493584752310113,0.4279594456734815,-0.059213552798337114
+noisy_untrusted_external,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.5,0.0,0.1,0.09508333333333334,0.22473766774019344,0.05959918864238822,0.40540629751573115,-0.0578261302883365
+noisy_untrusted_external,ego_only,Ego-only,exhaustive_hop,0.5,0.15,0.0,0.08341666666666667,0.0,0.0,0.0,0.08341666666666667
+noisy_untrusted_external,opportunistic_all,Opportunistic all,exhaustive_hop,0.5,0.15,0.0,0.30275,1.0,1.0,1.0,-0.34724999999999995
+noisy_untrusted_external,siot_aware,SIoT-aware,bounded_relationship_guided,0.5,0.15,0.0,0.09783333333333334,0.2285018831286446,0.08493584752310113,0.4279594456734815,-0.02915798535945413
+noisy_untrusted_external,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.5,0.15,0.0,0.09508333333333334,0.22473766774019344,0.05959918864238822,0.40540629751573115,-0.026225378833121614
+noisy_untrusted_external,ego_only,Ego-only,exhaustive_hop,0.5,0.15,0.1,0.08341666666666667,0.0,0.0,0.0,0.08341666666666667
+noisy_untrusted_external,opportunistic_all,Opportunistic all,exhaustive_hop,0.5,0.15,0.1,0.30275,1.0,1.0,1.0,-0.4472499999999999
+noisy_untrusted_external,siot_aware,SIoT-aware,bounded_relationship_guided,0.5,0.15,0.1,0.09783333333333334,0.2285018831286446,0.08493584752310113,0.4279594456734815,-0.07195392992680227
+noisy_untrusted_external,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.5,0.15,0.1,0.09508333333333334,0.22473766774019344,0.05959918864238822,0.40540629751573115,-0.06676600858469472
+nominal,ego_only,Ego-only,exhaustive_hop,0.0,0.0,0.0,0.1395,0.0,0.0,0.0,0.1395
+nominal,opportunistic_all,Opportunistic all,exhaustive_hop,0.0,0.0,0.0,0.8045,1.0,1.0,1.0,0.8045
+nominal,siot_aware,SIoT-aware,bounded_relationship_guided,0.0,0.0,0.0,0.21925,0.23561167450907256,0.12290880002226476,0.4444693331728291,0.21925
+nominal,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.0,0.0,0.0,0.2029166666666667,0.2341796366034337,0.11386163422559802,0.43242531577903626,0.2029166666666667
+nominal,ego_only,Ego-only,exhaustive_hop,0.0,0.0,0.1,0.1395,0.0,0.0,0.0,0.1395
+nominal,opportunistic_all,Opportunistic all,exhaustive_hop,0.0,0.0,0.1,0.8045,1.0,1.0,1.0,0.7045
+nominal,siot_aware,SIoT-aware,bounded_relationship_guided,0.0,0.0,0.1,0.21925,0.23561167450907256,0.12290880002226476,0.4444693331728291,0.17480306668271708
+nominal,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.0,0.0,0.1,0.2029166666666667,0.2341796366034337,0.11386163422559802,0.43242531577903626,0.15967413508876305
+nominal,ego_only,Ego-only,exhaustive_hop,0.0,0.15,0.0,0.1395,0.0,0.0,0.0,0.1395
+nominal,opportunistic_all,Opportunistic all,exhaustive_hop,0.0,0.15,0.0,0.8045,1.0,1.0,1.0,0.6545
+nominal,siot_aware,SIoT-aware,bounded_relationship_guided,0.0,0.15,0.0,0.21925,0.23561167450907256,0.12290880002226476,0.4444693331728291,0.20081367999666028
+nominal,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.0,0.15,0.0,0.2029166666666667,0.2341796366034337,0.11386163422559802,0.43242531577903626,0.18583742153282698
+nominal,ego_only,Ego-only,exhaustive_hop,0.0,0.15,0.1,0.1395,0.0,0.0,0.0,0.1395
+nominal,opportunistic_all,Opportunistic all,exhaustive_hop,0.0,0.15,0.1,0.8045,1.0,1.0,1.0,0.5545
+nominal,siot_aware,SIoT-aware,bounded_relationship_guided,0.0,0.15,0.1,0.21925,0.23561167450907256,0.12290880002226476,0.4444693331728291,0.15636674667937736
+nominal,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.0,0.15,0.1,0.2029166666666667,0.2341796366034337,0.11386163422559802,0.43242531577903626,0.14259488995492337
+nominal,ego_only,Ego-only,exhaustive_hop,0.25,0.0,0.0,0.1395,0.0,0.0,0.0,0.1395
+nominal,opportunistic_all,Opportunistic all,exhaustive_hop,0.25,0.0,0.0,0.8045,1.0,1.0,1.0,0.5545
+nominal,siot_aware,SIoT-aware,bounded_relationship_guided,0.25,0.0,0.0,0.21925,0.23561167450907256,0.12290880002226476,0.4444693331728291,0.16034708137273185
+nominal,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.25,0.0,0.0,0.2029166666666667,0.2341796366034337,0.11386163422559802,0.43242531577903626,0.14437175751580827
+nominal,ego_only,Ego-only,exhaustive_hop,0.25,0.0,0.1,0.1395,0.0,0.0,0.0,0.1395
+nominal,opportunistic_all,Opportunistic all,exhaustive_hop,0.25,0.0,0.1,0.8045,1.0,1.0,1.0,0.4545
+nominal,siot_aware,SIoT-aware,bounded_relationship_guided,0.25,0.0,0.1,0.21925,0.23561167450907256,0.12290880002226476,0.4444693331728291,0.11590014805544893
+nominal,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.25,0.0,0.1,0.2029166666666667,0.2341796366034337,0.11386163422559802,0.43242531577903626,0.10112922593790465
+nominal,ego_only,Ego-only,exhaustive_hop,0.25,0.15,0.0,0.1395,0.0,0.0,0.0,0.1395
+nominal,opportunistic_all,Opportunistic all,exhaustive_hop,0.25,0.15,0.0,0.8045,1.0,1.0,1.0,0.40449999999999997
+nominal,siot_aware,SIoT-aware,bounded_relationship_guided,0.25,0.15,0.0,0.21925,0.23561167450907256,0.12290880002226476,0.4444693331728291,0.14191076136939212
+nominal,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.25,0.15,0.0,0.2029166666666667,0.2341796366034337,0.11386163422559802,0.43242531577903626,0.12729251238196856
+nominal,ego_only,Ego-only,exhaustive_hop,0.25,0.15,0.1,0.1395,0.0,0.0,0.0,0.1395
+nominal,opportunistic_all,Opportunistic all,exhaustive_hop,0.25,0.15,0.1,0.8045,1.0,1.0,1.0,0.3045
+nominal,siot_aware,SIoT-aware,bounded_relationship_guided,0.25,0.15,0.1,0.21925,0.23561167450907256,0.12290880002226476,0.4444693331728291,0.09746382805210921
+nominal,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.25,0.15,0.1,0.2029166666666667,0.2341796366034337,0.11386163422559802,0.43242531577903626,0.08404998080406494
+nominal,ego_only,Ego-only,exhaustive_hop,0.5,0.0,0.0,0.1395,0.0,0.0,0.0,0.1395
+nominal,opportunistic_all,Opportunistic all,exhaustive_hop,0.5,0.0,0.0,0.8045,1.0,1.0,1.0,0.3045
+nominal,siot_aware,SIoT-aware,bounded_relationship_guided,0.5,0.0,0.0,0.21925,0.23561167450907256,0.12290880002226476,0.4444693331728291,0.10144416274546372
+nominal,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.5,0.0,0.0,0.2029166666666667,0.2341796366034337,0.11386163422559802,0.43242531577903626,0.08582684836494985
+nominal,ego_only,Ego-only,exhaustive_hop,0.5,0.0,0.1,0.1395,0.0,0.0,0.0,0.1395
+nominal,opportunistic_all,Opportunistic all,exhaustive_hop,0.5,0.0,0.1,0.8045,1.0,1.0,1.0,0.2045
+nominal,siot_aware,SIoT-aware,bounded_relationship_guided,0.5,0.0,0.1,0.21925,0.23561167450907256,0.12290880002226476,0.4444693331728291,0.05699722942818081
+nominal,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.5,0.0,0.1,0.2029166666666667,0.2341796366034337,0.11386163422559802,0.43242531577903626,0.04258431678704622
+nominal,ego_only,Ego-only,exhaustive_hop,0.5,0.15,0.0,0.1395,0.0,0.0,0.0,0.1395
+nominal,opportunistic_all,Opportunistic all,exhaustive_hop,0.5,0.15,0.0,0.8045,1.0,1.0,1.0,0.1545
+nominal,siot_aware,SIoT-aware,bounded_relationship_guided,0.5,0.15,0.0,0.21925,0.23561167450907256,0.12290880002226476,0.4444693331728291,0.08300784274212401
+nominal,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.5,0.15,0.0,0.2029166666666667,0.2341796366034337,0.11386163422559802,0.43242531577903626,0.06874760323111015
+nominal,ego_only,Ego-only,exhaustive_hop,0.5,0.15,0.1,0.1395,0.0,0.0,0.0,0.1395
+nominal,opportunistic_all,Opportunistic all,exhaustive_hop,0.5,0.15,0.1,0.8045,1.0,1.0,1.0,0.05449999999999999
+nominal,siot_aware,SIoT-aware,bounded_relationship_guided,0.5,0.15,0.1,0.21925,0.23561167450907256,0.12290880002226476,0.4444693331728291,0.0385609094248411
+nominal,siot_aware_trust_privacy,Privacy-aware SIoT,bounded_relationship_guided,0.5,0.15,0.1,0.2029166666666667,0.2341796366034337,0.11386163422559802,0.43242531577903626,0.02550507165320652

@@ -1,0 +1,17 @@
+scenario,policy,policy_label,hardest_variable,macro_f1,ci95_low,ci95_high
+nominal,ego_only,Ego-only,resource_state,0.43331369414502635,0.4239136940643547,0.44331332092765885
+nominal,opportunistic_all,Opportunistic all,activity,0.8642240563395565,0.8539821051983102,0.8741939546280469
+nominal,siot_aware,SIoT-aware,resource_state,0.5895027596051655,0.5766645443130067,0.6031443508461533
+nominal,siot_aware_trust_privacy,Privacy-aware SIoT,resource_state,0.5706114745390175,0.5592213225302834,0.5832074082015427
+degraded_ego,ego_only,Ego-only,activity,0.2628968799413168,0.2540570187161665,0.27122805164006586
+degraded_ego,opportunistic_all,Opportunistic all,activity,0.8445842191749432,0.8333763374701451,0.8557292419692996
+degraded_ego,siot_aware,SIoT-aware,activity,0.5792362997064895,0.5642215112187715,0.5949642663127769
+degraded_ego,siot_aware_trust_privacy,Privacy-aware SIoT,activity,0.5635108380911764,0.5502554076305602,0.576604328657058
+ambiguous_local_context,ego_only,Ego-only,place,0.30368732809165516,0.2950233806553806,0.3117745416359687
+ambiguous_local_context,opportunistic_all,Opportunistic all,activity,0.7992063786476046,0.7859822663444289,0.8117725564397152
+ambiguous_local_context,siot_aware,SIoT-aware,place,0.4812800704730564,0.47024266478186033,0.4916646386181231
+ambiguous_local_context,siot_aware_trust_privacy,Privacy-aware SIoT,place,0.46120148533080246,0.45119322923735383,0.4713480064051179
+noisy_untrusted_external,ego_only,Ego-only,resource_state,0.4048616691797329,0.39596374151064384,0.4140003918916765
+noisy_untrusted_external,opportunistic_all,Opportunistic all,resource_state,0.5586355365128106,0.5467772235093538,0.5697822794558922
+noisy_untrusted_external,siot_aware,SIoT-aware,resource_state,0.4780579242056488,0.4670109124926198,0.48901547188641953
+noisy_untrusted_external,siot_aware_trust_privacy,Privacy-aware SIoT,resource_state,0.4761790976890272,0.4653039310866242,0.4861722612718938

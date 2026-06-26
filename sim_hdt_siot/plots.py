@@ -78,19 +78,6 @@ def _legend_for_policies(policies: list[str]) -> tuple[list[plt.Rectangle], list
     return handles, labels
 
 
-def _bootstrap_confidence_interval(values: np.ndarray, seed: int = 7, samples: int = 2000) -> tuple[float, float]:
-    if len(values) == 0:
-        return float("nan"), float("nan")
-    if len(values) == 1:
-        return float(values[0]), float(values[0])
-    rng = np.random.default_rng(seed)
-    sampled_means = np.empty(samples)
-    for index in range(samples):
-        sampled_means[index] = rng.choice(values, size=len(values), replace=True).mean()
-    low, high = np.quantile(sampled_means, [0.025, 0.975])
-    return float(low), float(high)
-
-
 def _missingness_midpoint(label: str) -> float:
     cleaned = label.strip().strip("[]()")
     lower_text, upper_text = [part.strip() for part in cleaned.split(",")]
@@ -105,7 +92,6 @@ def plot_overall_accuracy(
 ) -> None:
     metrics_df = _ordered_metric_frame(metrics_df)
     scenarios = [scenario for scenario in DEFAULT_SCENARIOS if scenario in set(metrics_df["scenario"].astype(str))]
-    episode_summary_df = _ordered_metric_frame(episode_summary_df) if episode_summary_df is not None else None
     fig, axes = plt.subplots(2, 2, figsize=FIGURE_SIZE, sharex=False, sharey=True)
     axes_list = list(axes.flatten())
     all_values: list[float] = []
@@ -115,12 +101,6 @@ def plot_overall_accuracy(
         for policy in policies:
             value = float(subset.loc[subset["policy"].astype(str) == policy, "overall_context_accuracy"].iloc[0])
             all_values.append(value)
-            if episode_summary_df is not None:
-                series = episode_summary_df[
-                    (episode_summary_df["scenario"].astype(str) == scenario) & (episode_summary_df["policy"].astype(str) == policy)
-                ]["overall_context_accuracy"].to_numpy(dtype=float)
-                low, high = _bootstrap_confidence_interval(series, seed=7 + len(all_values))
-                all_values.extend([low, high])
     y_upper = min(1.0, max(all_values) + 0.04) if all_values else 1.0
 
     for ax, scenario in zip(axes_list, scenarios):
@@ -128,29 +108,15 @@ def plot_overall_accuracy(
         policies = [policy for policy in DEFAULT_POLICIES if policy in set(subset["policy"].astype(str))]
         x_positions = np.arange(len(policies))
         values = []
-        errors_low = []
-        errors_high = []
         for policy in policies:
             value = float(subset.loc[subset["policy"].astype(str) == policy, "overall_context_accuracy"].iloc[0])
             values.append(value)
-            if episode_summary_df is not None:
-                series = episode_summary_df[
-                    (episode_summary_df["scenario"].astype(str) == scenario) & (episode_summary_df["policy"].astype(str) == policy)
-                ]["overall_context_accuracy"].to_numpy(dtype=float)
-                low, high = _bootstrap_confidence_interval(series, seed=11 + len(values))
-                errors_low.append(max(0.0, value - low))
-                errors_high.append(max(0.0, high - value))
-            else:
-                errors_low.append(0.0)
-                errors_high.append(0.0)
         ax.bar(
             x_positions,
             values,
             color=[POLICY_COLORS[policy] for policy in policies],
             width=0.72,
             edgecolor="none",
-            yerr=np.vstack([errors_low, errors_high]),
-            error_kw={"elinewidth": 0.9, "capsize": 2.5, "capthick": 0.9, "ecolor": "#111827"},
         )
         ax.set_title(_scenario_label(scenario), fontsize=SUBPLOT_TITLE_SIZE, pad=4)
         ax.set_xticks(x_positions, [_policy_label(policy) for policy in policies], rotation=0)

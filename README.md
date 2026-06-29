@@ -154,8 +154,13 @@ python run_experiments.py \
   --discovery-mode-comparison-timesteps 6 \
   --discovery-mode-comparison-seeds 7 \
   --no-sensitivity \
-  --no-scalability
+  --no-scalability \
+  --output-dir tmp/smoke_test
 ```
+
+The smoke test writes to the ignored `tmp/smoke_test/` directory, leaves the
+manuscript outputs in `data/` and `figures/` unchanged, and records skipped
+optional analyses in its validation report.
 
 ## Expected CSV Outputs
 
@@ -173,6 +178,14 @@ Key outputs include:
 - `data/consistency_check_report.txt`
 
 Additional CSVs in `data/` provide graph diagnostics, per-variable error analysis, sensitivity analyses, context-state summaries, Pareto/cost-effectiveness results, and figure source data.
+
+The `sensitivity_*.csv` files are supplementary diagnostic sensitivity sweeps
+provided for reviewer inspection and reproducibility. They support robustness
+checks for graph topology, discovery, privacy, degradation, hop-radius, and
+recruitment-cap parameters. The manuscript emphasizes the main experiment,
+budget-matched comparison, discovery-mode comparison, adaptive ablation, and
+scalability analysis; the sensitivity files remain available as transparent
+supplementary diagnostics.
 
 Important metadata columns are included in the main comparison CSVs:
 
@@ -231,11 +244,7 @@ Overall status: PASS
 
 Data and code are available in this repository. All generated data are synthetic and are provided to support reproducibility of the tables and figures reported in the manuscript.
 
-The repository URL will be added after public release:
-
-```text
-https://github.com/RobbieGee/siot-hdt-opportunistic-sensing.git
-```
+The repository is publicly available at https://github.com/RobbieGee/siot-hdt-opportunistic-sensing.
 
 ## License
 

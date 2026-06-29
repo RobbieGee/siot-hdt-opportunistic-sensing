@@ -115,15 +115,16 @@ def run_experiment(config: ExperimentConfig | None = None) -> Dict[str, Path]:
     budget_matched_results_df, budget_matched_overhead_df = build_budget_matched_outputs(config)
     discovery_mode_comparison_df = build_discovery_mode_comparison(config)
     scalability_results_df, scalability_graph_summary_df = build_scalability_outputs(config)
-    scalability_results_df = _apply_experiment_metadata(
-        scalability_results_df,
-        config,
-        "scalability",
-        "scalability",
-        episodes=config.scalability_episodes,
-        timesteps=config.scalability_timesteps,
-        seeds=config.scalability_seeds,
-    )
+    if config.run_scalability:
+        scalability_results_df = _apply_experiment_metadata(
+            scalability_results_df,
+            config,
+            "scalability",
+            "scalability",
+            episodes=config.scalability_episodes,
+            timesteps=config.scalability_timesteps,
+            seeds=config.scalability_seeds,
+        )
     consistency_report_text = build_consistency_check_report(config, table1_df, discovery_mode_comparison_df, metrics_df)
 
     output_paths: Dict[str, Path] = {}
@@ -160,8 +161,6 @@ def run_experiment(config: ExperimentConfig | None = None) -> Dict[str, Path]:
         "budget_matched_results.csv": budget_matched_results_df,
         "budget_matched_overhead.csv": budget_matched_overhead_df,
         "discovery_mode_comparison.csv": discovery_mode_comparison_df,
-        "scalability_results.csv": scalability_results_df,
-        "scalability_graph_summary.csv": scalability_graph_summary_df,
         "figure2_overall_accuracy_data.csv": episode_summary_df[
             ["scenario", "policy", "policy_label", "seed", "episode", "overall_context_accuracy"]
         ],
@@ -169,6 +168,13 @@ def run_experiment(config: ExperimentConfig | None = None) -> Dict[str, Path]:
         "figure4_macro_f1_data.csv": per_variable_summary_df,
         "figure5_performance_vs_ego_missingness_data.csv": robustness_df,
     }
+    if config.run_scalability:
+        csv_outputs.update(
+            {
+                "scalability_results.csv": scalability_results_df,
+                "scalability_graph_summary.csv": scalability_graph_summary_df,
+            }
+        )
     for filename, frame in csv_outputs.items():
         path = data_dir / filename
         frame.to_csv(path, index=False)
@@ -1197,6 +1203,8 @@ def build_figures(
     }
     paths: Dict[str, Path] = {}
     for key, filename in config.plot_names.items():
+        if key.startswith("scalability_") and not config.run_scalability:
+            continue
         png_path = figures_dir / filename
         plotters[key](png_path)
         paths[filename] = png_path
@@ -1237,10 +1245,10 @@ def build_validation_report(
         "budget_matched_results.csv",
         "budget_matched_overhead.csv",
         "discovery_mode_comparison.csv",
-        "scalability_results.csv",
-        "scalability_graph_summary.csv",
     ]
     required_texts = ["consistency_check_report.txt"]
+    if config.run_scalability:
+        required_csvs.extend(["scalability_results.csv", "scalability_graph_summary.csv"])
     if config.run_sensitivity:
         required_csvs.extend(
             [
@@ -1252,7 +1260,12 @@ def build_validation_report(
                 "sensitivity_graph_topology.csv",
             ]
         )
-    required_figures = list(config.plot_names.values()) + [Path(name).with_suffix(".pdf").name for name in config.plot_names.values()]
+    required_plot_names = [
+        filename
+        for key, filename in config.plot_names.items()
+        if config.run_scalability or not key.startswith("scalability_")
+    ]
+    required_figures = required_plot_names + [Path(name).with_suffix(".pdf").name for name in required_plot_names]
     checks: List[tuple[str, bool, str]] = []
     for filename in required_csvs:
         checks.append((f"CSV exists: {filename}", (data_dir / filename).exists(), str(data_dir / filename)))
@@ -1354,8 +1367,9 @@ def build_validation_report(
         config.metrics_name,
         "discovery_mode_comparison.csv",
         "budget_matched_results.csv",
-        "scalability_results.csv",
     ]
+    if config.run_scalability:
+        metadata_files.append("scalability_results.csv")
     stale_free = True
     for filename in metadata_files:
         path = data_dir / filename
@@ -1527,6 +1541,12 @@ def build_validation_report(
         )
 
     lines = ["Validation report", ""]
+    if not config.run_scalability:
+        lines.append("SKIP: Scalability analysis: skipped by command-line option")
+    if not config.run_sensitivity:
+        lines.append("SKIP: Sensitivity analyses: skipped by command-line option")
+    if len(lines) > 2:
+        lines.append("")
     failed = []
     for label, passed, detail in checks:
         status = "PASS" if passed else "FAIL"
